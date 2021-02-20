@@ -1,0 +1,59 @@
+
+.song__area {
+    height: 100%;
+    max-height: 40vh;
+    width: 100%;
+    margin: 3.5em;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-container{
+    display: flex;
+    height: 40vh;
+    width: 23vw;
+    // margin: 7.2%;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #333533;
+    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    img {
+        width: 89%;
+        border-radius: 50%;
+        // border: 0.1px solid #fff;
+        // box-shadow: 0px 2px 10px #ffffff;
+    }
+}
+
+// Mobile layout
+@media screen and (max-width: 540px) {
+    .song-container {
+        img {
+            width: 60%;
+            box-shadow: 0px 5px 20px rgb(71, 71, 71);
+        }
+    }
+}
+// iPad layout
+@media (min-width: 768px) and (max-width: 1024px) {
+    .song-container {
+        img {
+            width: 70%;
+            box-shadow: 0px 5px 20px rgb(71, 71, 71);
+        }
+    }
+}
+// iPad Pro and other 13 inch screen
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .song-container {
+        img {
+            width: 60%;
+        }
+    }
+}

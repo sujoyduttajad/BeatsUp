@@ -1,24 +1,105 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useRef} from 'react';
+// import styles
+import "./styles/app.scss";
+import Player from './components/Player';
+import Song from './components/Song';
+import data from './data';
+import Library from './components/Library';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 
 function App() {
+  //Ref
+  // If you need to select a specific HTML tag in your component you can use a reference
+  // So to use it import useRef from react
+  const audioRef = useRef(null);
+  const [songs, setSongs] = useState(data());
+  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [songInfo, setSongInfo] = useState({
+    currentTime: 0,
+    duration: 0,
+    animationPercentage: 0,
+  });
+  const [libraryStatus, setLibraryStatus] = useState(false);
+  
+  // Event handler lifted up
+  // onTimeUpdate basically runs everytime the time changes in the audio
+  const timeUpdateHandler = (e) => {
+    const current = e.target.currentTime;
+    const duration = e.target.duration;
+    // Calculate Percentage
+    // This code gets rid of all the decimals
+    const roundedCurrent = Math.round(current);
+    const roundedDuration = Math.round(duration);
+    const animation = Math.round((roundedCurrent / roundedDuration) * 100);
+    
+
+    setSongInfo({
+        ...songInfo,
+        currentTime: current,
+        duration: duration,
+        animationPercentage: animation
+    })
+  };
+  
+  const songEndHandler = async () => {
+    let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+    await setCurrentSong(songs[(currentIndex + 1) % songs.length]);     
+    if(isPlaying) audioRef.current.play();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${libraryStatus ? "library-active" : ""}`} >
+      
+        <nav><Header /></nav>
+        <div className="container">
+        <div className='row player-container'>
+          <aside>
+            <Sidebar libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+          </aside>
+          <div className="col-lg-8">
+            <Player 
+              audioRef={audioRef}
+              songs={songs}
+              currentSong={currentSong}
+              isPlaying={isPlaying}
+              setIsPlaying={setIsPlaying} 
+              songInfo={songInfo}
+              setSongInfo={setSongInfo}
+              setSongs={setSongs}
+              setCurrentSong={setCurrentSong}
+            />
+          </div>
+          <div className="col-lg-4">
+          <Song currentSong={currentSong}/>
+          </div>
+        </div>
+        <div className="row player-container">
+            <section>
+              <Library 
+                songs={songs}
+                currentSong={currentSong}
+                setCurrentSong={setCurrentSong}
+                audioRef={audioRef} 
+                isPlaying={isPlaying}
+                setIsPlaying={setIsPlaying}
+                setSongs={setSongs}
+                songInfo={songInfo}
+              />
+                <audio 
+                    onTimeUpdate={timeUpdateHandler}
+                    onLoadedMetadata={timeUpdateHandler} 
+                    ref={audioRef} 
+                    src={currentSong.audio}
+                    onEnded={songEndHandler}
+                ></audio>
+            </section>
+        </div>
+      </div>
+      <footer className="footer"></footer>
     </div>
+    
   );
 }
 

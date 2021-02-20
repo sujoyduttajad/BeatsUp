@@ -1,0 +1,78 @@
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./sidebar";
+@import "./header";
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+// To get rid off all the default margins 
+// and paddings from all the elements
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    color: rgb(54, 54, 54);
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181A19;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    // margin: 4.5rem;
+    box-shadow: 0px 5px 20px rgb(71, 71, 71);
+    transition: all 0.5s ease;
+    background-color: #EE6C4D;
+    //background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    //width: 75vw;
+    margin: 0 auto;
+}
+
+.row {
+    background: none !important;
+}
+
+.col-lg-8, .col-lg-4 {
+    padding: 0 !important;
+}
+
+.footer {
+    height: 10vh;
+}
+// .library-active {
+//     margin-left: 15%;
+// }
+
+// @media (min-width: 1024px) and (max-width: 1366px) {
+//     .library-active {
+//         margin-left: 38%;
+//     }
+// }

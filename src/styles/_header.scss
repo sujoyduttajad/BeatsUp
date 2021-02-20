@@ -1,0 +1,26 @@
+
+.header__navbar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181A19;
+    vertical-align: middle;
+    margin: 1em auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    &:first-child {
+        color: #EE6C4D;
+        // text-shadow: #495057 1px 0 10px;
+    }
+}
+
+.header__h1 {
+    padding-left: 15px;
+    padding-top: 9px;
+    color: #EE6C4D;
+    text-shadow: #495057 1px 0 10px;
+    font-family: 'Comfortaa', cursive;
+}
