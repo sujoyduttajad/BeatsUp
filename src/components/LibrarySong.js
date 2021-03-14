@@ -72,7 +72,7 @@ export default function LibrarySong({songs, currentSong, setSongs, isPlaying, se
                 <TableCell align="center">
                     <FontAwesomeIcon
                     onClick={selectSong} 
-                    className="play" 
+                    className="play-pause" 
                     size="2x" 
                     icon={(currentSong.id === song.id) && isPlaying ? faPause : faPlay} />
                 </TableCell>

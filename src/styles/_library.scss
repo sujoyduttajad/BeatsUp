@@ -36,15 +36,15 @@
     justify-content: space-evenly;
     padding: 1rem 2rem;
     transition: all 0.5s ease;
-    cursor: pointer;
     width: 100%;
     img {
         width: 50%;
         border-radius: 8px;
     }
-    // &:hover {
-    //     background-color: #51BAEA;
-    // }
+}
+
+.play-pause {
+    cursor: pointer;
 }
 
 

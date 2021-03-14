@@ -22,6 +22,7 @@ function App() {
     animationPercentage: 0,
   });
   const [libraryStatus, setLibraryStatus] = useState(false);
+  const [repeat, setRepeat] = useState(false);
   
   // Event handler lifted up
   // onTimeUpdate basically runs everytime the time changes in the audio
@@ -33,8 +34,6 @@ function App() {
     const roundedCurrent = Math.round(current);
     const roundedDuration = Math.round(duration);
     const animation = Math.round((roundedCurrent / roundedDuration) * 100);
-    
-
     setSongInfo({
         ...songInfo,
         currentTime: current,
@@ -44,9 +43,14 @@ function App() {
   };
   
   const songEndHandler = async () => {
-    let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
-    await setCurrentSong(songs[(currentIndex + 1) % songs.length]);     
-    if(isPlaying) audioRef.current.play();
+      let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+      if(repeat) {
+        await setCurrentSong(songs[(currentIndex)]);     
+        if(isPlaying) audioRef.current.play();
+      }else {
+        await setCurrentSong(songs[(currentIndex + 1) % songs.length]);     
+        if(isPlaying) audioRef.current.play();
+      }
   }
 
   return (
@@ -69,6 +73,8 @@ function App() {
               setSongInfo={setSongInfo}
               setSongs={setSongs}
               setCurrentSong={setCurrentSong}
+              setRepeat={setRepeat}
+              repeat={repeat}
             />
           </div>
           <div className="col-lg-4">

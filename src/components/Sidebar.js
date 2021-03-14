@@ -1,6 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBook, faBookmark, faBroadcastTower, faClipboardList, faCompactDisc, faFileAudio, faFolder, faFolderOpen, faHeadphones, faLightbulb, faMicrophoneAlt, faMusic, faPalette, faStar, faUser, faUserCheck } from '@fortawesome/free-solid-svg-icons';
+import 
+    {   faBars, 
+        faBookmark, 
+        faBroadcastTower, 
+        faClipboardList, 
+        faCompactDisc, 
+        faFolder, 
+        faHeadphones, 
+        faLightbulb, 
+        faMicrophoneAlt, 
+        faPalette, 
+        faUser, 
+    } from '@fortawesome/free-solid-svg-icons';
 
  const Sidebar = ({ setLibraryStatus, libraryStatus }) => {
     return (
@@ -73,7 +85,7 @@ import { faBars, faBook, faBookmark, faBroadcastTower, faClipboardList, faCompac
                     <h3>About</h3>
                 </div>
                 <div>
-                    <h3>ContactUs</h3>
+                    <h3>Contact Us</h3>
                 </div>
             </section>
 

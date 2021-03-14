@@ -1,4 +1,11 @@
 
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 100;
+}
+
 .header__navbar {
     
     display: flex;
@@ -7,9 +14,7 @@
     background-color: #181A19;
     vertical-align: middle;
     margin: 1em auto;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
+    
 
     &:first-child {
         color: #EE6C4D;
