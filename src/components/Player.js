@@ -4,7 +4,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
+import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles({
     button: {
@@ -208,8 +208,15 @@ export default function Player({
                 </div>
             </div>
             <div className="volume-control">
+                <FontAwesomeIcon 
+                    className="repeat-song" 
+                    // onClick={repeathandler}
+                    size="2x" 
+                    icon={faVolumeUp} 
+                />
                 <input 
                     type="range"
+                    className="volume-slider"
                     orient="vertical"
                     min={0}
                     max={100}
