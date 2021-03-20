@@ -7,7 +7,7 @@ import { faHeadphones, faHeadphonesAlt, faMusic } from '@fortawesome/free-solid-
         <nav>
             <div className="header__navbar">      
                 <FontAwesomeIcon size="3x" icon={faHeadphonesAlt} />  
-                <h1 className="header__h1"> Beats Up!</h1>
+                <h1 className="header__h1"> beats Up!</h1>
             </div>
         </nav>
         

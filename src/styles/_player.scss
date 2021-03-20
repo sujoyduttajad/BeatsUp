@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 $PlayerColor: #212529 ;
+$DarkerShade: #202020;
 $LexenDeca: 'Lexend Deca', sans-serif;
 $OleoScript: 'Oleo Script', cursive;
 
@@ -48,7 +49,7 @@ $OleoScript: 'Oleo Script', cursive;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border: 2px solid #202020;
+    border: 2px solid $DarkerShade;
     border-radius: 20px;
     margin-top: 1rem;
     input {
@@ -78,27 +79,40 @@ $OleoScript: 'Oleo Script', cursive;
 .volume-control {
     display: flex;
     background-color: inherit;
-    border: 1.5px solid black;
+    border: 1.5px solid $DarkerShade;
     flex-direction: column;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
     margin-right: 7.3%;
-    padding: 15px;
-    border-radius: 8px;
-}
-.volume-slider[orient=vertical] {
-    writing-mode: bt-lr; /* IE */
-    -webkit-appearance: slider-vertical; /* WebKit */
-    width: 8px;
-    height: 175px;
-    padding: 0 5px;
-    margin-top: 15px;
-    background-color: $PlayerColor;
+    padding: 21px 2px 15px 2px;
+    border-radius: 15px;
+    height: 32vh;
 }
 
-.play, .skip-back, .skip-forward, .repeat-song {
+.MuiSlider-root {
+    color: $PlayerColor !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.MuiSlider-thumb {
+    background-color: $PlayerColor !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 0 !important;
+}
+.MuiSlider-rail, .MuiSlider-track {
+    width: 6px !important;
+    border-radius: 5px !important;
+}
+
+.play, .skip-back, .skip-forward, .repeat-song, .volume-icon {
     cursor: pointer;
+}
+
+.volume-icon {
+    margin-top: 12px;
+    padding-bottom: 4px;
 }
 
 input[type="range"]:focus {

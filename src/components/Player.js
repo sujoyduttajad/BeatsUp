@@ -2,14 +2,43 @@ import React, {useState} from 'react'
 import Badge from '@material-ui/core/Badge';
 import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
+import Slider from '@material-ui/core/Slider';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles({
     button: {
       color: "#212529",
     },
+    root: {
+        height: 190,
+        color: '#52af77',
+      },
+      thumb: {
+        height: 24,
+        width: 44,
+        orientation: 'horizontal',
+        backgroundColor: '#fff',
+        border: '2px solid #52af77',
+        marginTop: -8,
+        marginLeft: -12,
+        '&:focus, &:hover, &$active': {
+          boxShadow: 'inherit',
+        },
+      },
+      active: {},
+      valueLabel: {
+        left: 'calc(-50% + 4px)',
+      },
+      track: {
+        height: 8,
+        borderRadius: 4,
+      },
+      rail: {
+        height: 8,
+        borderRadius: 4,
+      },
   });
 const CustomTooltip = withStyles((theme) => ({
     tooltip: {
@@ -17,6 +46,36 @@ const CustomTooltip = withStyles((theme) => ({
         fontSize: 13,
     },
 }))(Tooltip);
+
+// const customUseStyles = makeStyles({
+//     root: {
+//       height: 200,
+//       color: '#52af77',
+//     },
+//     thumb: {
+//       height: 24,
+//       width: 24,
+//       backgroundColor: '#fff',
+//       border: '2px solid #52af77',
+//       marginTop: -8,
+//       marginLeft: -12,
+//       '&:focus, &:hover, &$active': {
+//         boxShadow: 'inherit',
+//       },
+//     },
+//     active: {},
+//     valueLabel: {
+//       left: 'calc(-50% + 4px)',
+//     },
+//     track: {
+//       height: 8,
+//       borderRadius: 4,
+//     },
+//     rail: {
+//       height: 8,
+//       borderRadius: 4,
+//     },
+//   });
 
 export default function Player({ 
     audioRef, 
@@ -34,7 +93,9 @@ export default function Player({
     
     // This state hides or displays the badge    
     const [invisible, setInvisible] = useState(false);
+    const [mute, setMute] = useState(false);
     const classes = useStyles();
+
 
     const activeLibraryHandler = (nextPrev) => {
         // Add active songs
@@ -88,6 +149,24 @@ export default function Player({
             setInvisible(!invisible);
         }
     }
+    // Function to handle volume change
+    const handleVolumeChange = (e, value) => {
+        // console.log(value)
+        if(isPlaying) {
+            audioRef.current.volume = (value/100);
+        }
+    }
+    // Function to handle mute
+    const handleMute = () => {
+        if(isPlaying && mute === false) {
+            audioRef.current.volume = 0;
+            setMute(true);
+        }
+        else if(isPlaying && mute === true) {
+            audioRef.current.volume = 0.5;
+            setMute(false);
+        }
+    }
     const skipTrackHandler = async (direction) => {
         let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
         // console.log(songs[(currentIndex + 1) % songs.length]);
@@ -120,7 +199,7 @@ export default function Player({
     const trackAnimation = {
         transform: `translateX(${songInfo.animationPercentage}%)`
     }
-
+    
     return (
         <div className="player__area">
             <div className="player">
@@ -191,7 +270,7 @@ export default function Player({
                     <p>{getTime(songInfo.currentTime)}</p>
                     <div 
                         style={{
-                        background: `linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`
+                        background: `#212529`
                         }} 
                         className="track"
                     >
@@ -208,19 +287,29 @@ export default function Player({
                 </div>
             </div>
             <div className="volume-control">
-                <FontAwesomeIcon 
-                    className="repeat-song" 
-                    // onClick={repeathandler}
-                    size="2x" 
-                    icon={faVolumeUp} 
-                />
-                <input 
-                    type="range"
-                    className="volume-slider"
-                    orient="vertical"
-                    min={0}
-                    max={100}
-                />
+                <div className={classes.root}>
+                    <Slider
+                        valueLabelDisplay="auto"
+                        orientation="vertical"
+                        defaultValue={30}
+                        onChange={handleVolumeChange}
+                        aria-labelledby="vertical-slider"
+                        // step={0.1}
+                        // min={0}
+                        // max={1.0}
+                        // // value={value * 10}
+                    />
+                </div>
+                <CustomTooltip title={`${mute ? 'Unmute' : 'Mute'}`} arrow placement="bottom">
+                    <Button className={classes.button}>
+                        <FontAwesomeIcon 
+                            className="volume-icon" 
+                            size="2x" 
+                            icon={mute ? faVolumeMute : faVolumeUp} 
+                            onClick={handleMute}
+                        />
+                    </Button>
+                </CustomTooltip>
             </div>
             
         </div>
