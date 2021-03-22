@@ -7,6 +7,7 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 
+// Material UI, CSS in JS for the input range slider
 const useStyles = makeStyles({
     button: {
       color: "#212529",
@@ -40,6 +41,7 @@ const useStyles = makeStyles({
         borderRadius: 4,
       },
   });
+
 const CustomTooltip = withStyles((theme) => ({
     tooltip: {
         boxShadow: theme.shadows[1],
@@ -47,35 +49,6 @@ const CustomTooltip = withStyles((theme) => ({
     },
 }))(Tooltip);
 
-// const customUseStyles = makeStyles({
-//     root: {
-//       height: 200,
-//       color: '#52af77',
-//     },
-//     thumb: {
-//       height: 24,
-//       width: 24,
-//       backgroundColor: '#fff',
-//       border: '2px solid #52af77',
-//       marginTop: -8,
-//       marginLeft: -12,
-//       '&:focus, &:hover, &$active': {
-//         boxShadow: 'inherit',
-//       },
-//     },
-//     active: {},
-//     valueLabel: {
-//       left: 'calc(-50% + 4px)',
-//     },
-//     track: {
-//       height: 8,
-//       borderRadius: 4,
-//     },
-//     rail: {
-//       height: 8,
-//       borderRadius: 4,
-//     },
-//   });
 
 export default function Player({ 
     audioRef, 
@@ -93,10 +66,11 @@ export default function Player({
     
     // This state hides or displays the badge    
     const [invisible, setInvisible] = useState(false);
+    // This state holds the current state of mute
     const [mute, setMute] = useState(false);
     const classes = useStyles();
 
-
+    // Event Handlers
     const activeLibraryHandler = (nextPrev) => {
         // Add active songs
         const newSongs = songs.map((song) => {
@@ -114,7 +88,7 @@ export default function Player({
         })
         setSongs(newSongs);
     }
-    // Event handlers
+    // This handles the song to be played
     const playSongHandler = () => {
         if(isPlaying) {
             audioRef.current.pause();
@@ -144,9 +118,13 @@ export default function Player({
     }
     // Repeat a single song
     const repeathandler = () => {
-        setRepeat(true);
-        if(repeat) {
+        
+        if(repeat === false) {
+            setRepeat(true);
             setInvisible(!invisible);
+        }else {
+            setRepeat(false);
+            setInvisible(invisible);
         }
     }
     // Function to handle volume change
