@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 
     {   faBars, 
@@ -13,8 +13,12 @@ import
         faPalette, 
         faUser, 
     } from '@fortawesome/free-solid-svg-icons';
+import { MusicContext } from '../context/musicContext';    
 
- const Sidebar = ({ setLibraryStatus, libraryStatus }) => {
+ const Sidebar = () => {
+
+    const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
+
     return (
         <nav className={`slideout ${libraryStatus ? "selected" : ''}`}>
            
