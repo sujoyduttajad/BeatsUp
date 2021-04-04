@@ -18,7 +18,7 @@ function App() {
     
       <Router>
         <div className={`App ${libraryStatus ? "library-active" : ""}`} >
-            <nav><Header /></nav>
+          <Header />
             <aside>
                 <Sidebar />
             </aside>

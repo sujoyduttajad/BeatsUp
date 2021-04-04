@@ -1,31 +1,283 @@
+$lightShade : #f8f9fa;
+$MainOrange: #EE6C4D;
+$BlackBackground: #181A19;
 
 nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
     z-index: 100;
+    background-color: $BlackBackground;
 }
 
 .header__navbar {
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #181A19;
+    background-color: $BlackBackground;
     vertical-align: middle;
-    margin: 1em auto;
-    
+    margin: 0.4em;
+    margin-right: 4rem;
+    margin-left: 0;
 
     &:first-child {
-        color: #EE6C4D;
+        color: $MainOrange;
         // text-shadow: #495057 1px 0 10px;
+    }
+    img {
+        width: 7rem;
+        height: 5rem;
+        color: $MainOrange;
     }
 }
 
 .header__h1 {
-    padding-left: 15px;
     padding-top: 9px;
-    color: #EE6C4D;
-    text-shadow: #495057 1px 0 10px;
+    color: $MainOrange;
+    // text-shadow: #495057 1px 0 10px;
     font-family: 'Comfortaa', cursive;
+}
+
+.header__navbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*  ########    Search Styles     ####### */
+
+.header__submit {
+    height: 37px;
+    width: 38px !important;
+    border: 0px solid;
+    border-radius: 50%;
+    border: 2px solid $MainOrange;
+    background-color: $MainOrange;
+    position: absolute;
+    color: #181A19;
+    font-size: 23px;
+    font-weight: 100;
+    cursor: pointer;
+    z-index: 0;
+    transition: all 300ms linear;
+    font-size: 23px;
+    font-family: inherit;
+    margin-top: 0.3rem;
+    margin-left: 2.1rem;
+    padding: 4px 2px;
+}
+
+.header__submit:hover {
+    transition: all 300ms linear;
+    color: #fff;
+    font-size: 23px; 
+}
+.header__submit:valid {
+    border: 2px solid $MainOrange;
+    background-color: $MainOrange;
+    color: #f8f9fa;
+    width: 5rem;
+    border-radius: 50px;
+    transition: all 300ms linear;
+    font-size: 23px;
+}
+
+.header__search__bar {
+  position:relative;
+  height:2.9rem;
+  width:190px;
+  padding: 0 2rem 0 0;
+  transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  background: transparent;
+  color: white;
+  margin-right: -75px;
+  text-align: left;
+  cursor: pointer;
+  z-index: 1;
+  border: 2px solid $MainOrange;
+  border-radius: 40px;
+  font-family: inherit;
+}
+
+.header__search__bar:focus {
+  width:320px;
+  outline: none;
+  background: $lightShade;
+  margin-right: -20px;
+  color: rgb(50,50,50);
+  border: 3px solid rgb(50,50,50);
+  border-radius: 40px;
+  padding-left: 12px;
+  cursor: text;
+  font-family: inherit;
+  transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.header__search__bar:focus::placeholder {
+  color: transparent;
+  transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  padding-left: 9rem;
+}
+
+.header__search__bar::placeholder {
+  color: gray;
+  transition: all 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  font-family: inherit;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
+
+/*  ########    Button Styles     ####### */
+
+.btn {
+    
+	font-family: inherit;
+	font-size: inherit;
+    width: 9.5rem;
+	cursor: pointer;
+    position: relative;
+    left: 6rem;
+	display: inline-block;
+    border: 2px solid $MainOrange;
+    border-radius: 8px;
+	margin: 5px;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	// font-weight: 700;
+	outline: none;
+	transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 100;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    vertical-align: middle;
+
+    span {
+        padding-left: 1.5rem;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: 100;
+    }
+}
+
+.btn-settings {
+    font-family: inherit;
+	font-size: inherit;
+    width: 11rem;
+	cursor: pointer;
+    position: relative;
+    left: 6rem;
+	display: inline-block;
+    border: 2px solid $MainOrange;
+    border-radius: 8px;
+	margin: 5px;
+    padding: 0.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 100;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    vertical-align: middle;
+
+    span {
+        padding-left: 1.5rem;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: 100;
+    }
+}
+.btn-bell {
+    font-family: inherit;
+	font-size: inherit;
+    width: 100%;
+	cursor: pointer;
+    position: relative;
+    left: 7.5rem;
+	display: inline-block;
+    border: 2px solid $MainOrange;
+    border: none;
+    border-radius: 8px;
+	margin: 5px;
+    margin-left: 2rem;
+    padding: 0.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 100;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    vertical-align: middle;
+}
+
+.btn:after {
+	content: '';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    outline: none;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'inherit';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+    outline: none;
+	-webkit-font-smoothing: antialiased;
+}
+/* Button 3 */
+.btn-3 {
+	background: $BlackBackground;
+	color: $MainOrange;
+}
+
+.btn-3:hover {
+	background: $MainOrange;
+    color: #fff;
+    outline: none;
+}
+
+.btn-3:active {
+	background: $MainOrange;
+    color: #fff;
+	top: 2px;
+    outline: none;
+}
+
+.btn-3:before {
+	left: 12;
+	top: 0;
+	line-height: 3;
+	font-size: 140%;
+	
+}
+
+/*  ########    Button Styles     ####### */
+
+.Avatar {
+    position: relative;
+
 }

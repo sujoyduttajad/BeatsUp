@@ -278,6 +278,30 @@ function chillHop() {
   album: "Essentials Spring 2021",
 },
 {
+  name: "Runaway",
+  cover: 
+      "https://i.scdn.co/image/ab67616d0000b273f3f3b79eee22fea56de44c43",
+  artist: "Blue Wednesday, Magnus Klausen",
+  audio: "https://mp3.chillhop.com/serve.php/?mp3=12135",
+  color: ['#D54948','#392E4C'],
+  id: uuidv4(),
+  active: false,  
+  duration: "2:14",
+  album: "Essentials Spring 2021",
+},
+{
+  name: "Exhale",
+  cover: 
+      "https://i.scdn.co/image/ab67616d0000b27335db1818ab7690078ebd38f0",
+  artist: "Blue Wednesday, Tender Spring",
+  audio: "https://mp3.chillhop.com/serve.php/?mp3=10337",
+  color: ['#D2B7C6','#DF5E86'],
+  id: uuidv4(),
+  active: false,  
+  duration: "2:23",
+  album: "Chillhop Essentials Winter 2020",
+},
+{
   name: "Coffee Break",
   cover: 
       "https://i.scdn.co/image/a107c2856862918d8da5249f77ec83bec388d4cf",
@@ -348,6 +372,42 @@ function chillHop() {
   active: false,  
   duration: "2:28",
   album: "Essentials Spring 2021",
+},
+{
+  name: "Motions",
+  cover: 
+      "https://i.scdn.co/image/ab67616d0000b273b990c7fc4f939c3a94f819cb",
+  artist: "SwuM, Delayde",
+  audio: "https://mp3.chillhop.com/serve.php/?mp3=11349",
+  color: ['#41A89B','#EE977C'],
+  id: uuidv4(),
+  active: false,  
+  duration: "2:11",
+  album: "Essentials Spring 2021",
+},
+{
+  name: "Lone Wolf",
+  cover: 
+      "https://i.scdn.co/image/ab67616d0000b273b990c7fc4f939c3a94f819cb",
+  artist: "Comodo",
+  audio: "https://mp3.chillhop.com/serve.php/?mp3=12183",
+  color: ['#41A89B','#EE977C'],
+  id: uuidv4(),
+  active: false,  
+  duration: "2:07",
+  album: "Essentials Spring 2021",
+},
+{
+  name: "Tumble's Lullaby",
+  cover: 
+      "https://chillhop.com/wp-content/uploads/2020/07/38147ead546d4fcc613080507497fe5502a5a241-1024x1024.jpg",
+  artist: "Kyle McEvoy, Stan Forebee",
+  audio: "https://mp3.chillhop.com/serve.php/?mp3=2572",
+  color: ['#A870A1','#4F5FAC'],
+  id: uuidv4(),
+  active: false,  
+  duration: "3:22",
+  album: "Bloom",
 },
   ];
 }

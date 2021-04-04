@@ -8,6 +8,7 @@ import
         faCompactDisc, 
         faFolder, 
         faHeadphones, 
+        faHeart, 
         faLightbulb, 
         faMicrophoneAlt, 
         faPalette, 
@@ -37,8 +38,8 @@ import { MusicContext } from '../context/musicContext';
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
-                    <h3>Starred</h3>
-                    <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faBookmark} /></span>
+                    <h3>Liked Songs</h3>
+                    <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
                 </div>
                 <div>
                     <h3>Playlist</h3>

@@ -55,13 +55,16 @@ export default function LibrarySong({songs, currentSong, setSongs, isPlaying, se
 
         /*   ##############            CURRENT SONG PLAYER           ##############      */
         
-        // This code executes only when isPlaying is true and the currentSong in the player matches the song which is clicked on
+        // This code executes only when isPlaying is true and the currentSong 
+        // in the player matches the song which is clicked on the library
         if(isPlaying && currentSong.id === song.id) {
             audioRef.current.pause();
-            setIsPlaying(!isPlaying);
+            console.log(currentSong)
+            setIsPlaying(false);
         } else {
             audioRef.current.play();
-            setIsPlaying(!isPlaying);
+            console.log(currentSong)
+            setIsPlaying(true);
         }
         /*   ##############            CURRENT SONG PLAYER           ##############      */
     }
