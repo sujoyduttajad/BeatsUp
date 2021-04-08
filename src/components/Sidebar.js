@@ -38,7 +38,7 @@ import { MusicContext } from '../context/musicContext';
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
-                    <h3>Liked Songs</h3>
+                    <h3>Favourites</h3>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
                 </div>
                 <div>
