@@ -17,7 +17,7 @@ nav {
     background-color: $BlackBackground;
     vertical-align: middle;
     margin: 0.4em;
-    margin-right: 4rem;
+    margin-right: 0rem;
     margin-left: 0;
 
     &:first-child {
@@ -37,7 +37,7 @@ nav {
     // text-shadow: #495057 1px 0 10px;
     font-family: 'Comfortaa', cursive;
     padding-left: 0;
-    margin-left: -2px;
+    margin-left: 0;
 }
 
 .header__navbuttons {
@@ -116,7 +116,7 @@ nav {
   color: rgb(50,50,50);
   border: 3px solid rgb(50,50,50);
   border-radius: 40px;
-  padding-left: 12px;
+  padding-left: 5px;
   cursor: text;
   font-family: inherit;
   transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -173,6 +173,36 @@ nav {
     }
 }
 
+.btn-about {
+    font-family: inherit;
+	font-size: inherit;
+    width: 9rem;
+	cursor: pointer;
+    position: relative;
+    left: 6rem;
+	display: inline-block;
+    border: 2px solid $MainOrange;
+    border-radius: 8px;
+	margin: 5px;
+    padding: 0.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 100;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    vertical-align: middle;
+
+    span {
+        padding-left: 1.5rem;
+        font-size: 17px;
+        text-decoration: none;
+        font-weight: 100;
+    }
+}
+
 .btn-settings {
     font-family: inherit;
 	font-size: inherit;
@@ -213,9 +243,9 @@ nav {
     border: 2px solid $MainOrange;
     border: none;
     border-radius: 8px;
-	margin: 5px;
-    margin-left: 2rem;
-    padding: 0.4rem;
+	margin: 0.1rem 0.01rem;
+    margin-left: 0.2rem;
+    padding: 0.4rem 1rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	outline: none;
@@ -225,6 +255,13 @@ nav {
     -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
     vertical-align: middle;
+}
+
+.btn-dropdown {
+    width: 45px;
+    height: 31px;
+    background: #C4C4C4;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .btn:after {
@@ -283,3 +320,15 @@ nav {
     position: relative;
 
 }
+.avatar__dropdown {
+    font-size: 25px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+    color: #C4C4C4;
+}
+.MuiMenu-list, .MuiPopover-paper {
+    background-color: #343a40 !important;
+    border-radius: 10px !important;
+    width: 9.5rem !important;
+}
+ 
