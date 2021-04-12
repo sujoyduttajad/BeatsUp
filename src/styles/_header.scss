@@ -1,6 +1,7 @@
 $lightShade : #f8f9fa;
 $MainOrange: #EE6C4D;
 $BlackBackground: #181A19;
+$ButtonsBackground: #1E2225;
 
 nav {
     position: sticky;
@@ -149,7 +150,8 @@ nav {
     position: relative;
     left: 6rem;
 	display: inline-block;
-    border: 2px solid $MainOrange;
+    // border: 2px solid $MainOrange;
+    border: 0;
     border-radius: 8px;
 	margin: 5px;
     padding-left: 0.1rem;
@@ -181,7 +183,8 @@ nav {
     position: relative;
     left: 6rem;
 	display: inline-block;
-    border: 2px solid $MainOrange;
+    // border: 2px solid $MainOrange;
+    border: 0;
     border-radius: 8px;
 	margin: 5px;
     padding: 0.4rem;
@@ -206,12 +209,13 @@ nav {
 .btn-settings {
     font-family: inherit;
 	font-size: inherit;
-    width: 11rem;
+    width: 10.5rem;
 	cursor: pointer;
     position: relative;
     left: 6rem;
 	display: inline-block;
-    border: 2px solid $MainOrange;
+    // border: 2px solid $MainOrange;
+    border: 0;
     border-radius: 8px;
 	margin: 5px;
     padding: 0.4rem;
@@ -240,7 +244,7 @@ nav {
     position: relative;
     left: 7.5rem;
 	display: inline-block;
-    border: 2px solid $MainOrange;
+    // border: 2px solid $MainOrange;
     border: none;
     border-radius: 8px;
 	margin: 0.1rem 0.01rem;
@@ -289,7 +293,8 @@ nav {
 }
 /* Button 3 */
 .btn-3 {
-	background: $BlackBackground;
+	// background: #222629;
+    background: $ButtonsBackground;
 	color: $MainOrange;
 }
 
@@ -330,5 +335,8 @@ nav {
     background-color: #343a40 !important;
     border-radius: 10px !important;
     width: 9.5rem !important;
+}
+.hr {
+    background-color: $MainOrange;
 }
  

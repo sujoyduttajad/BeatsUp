@@ -57,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "0.45rem 3rem",
         fontSize: '1.18rem',
         paddingLeft: '1.8rem',
-        color: "#bfc0c0",
+        // color: "#bfc0c0",
+        color: "#EE6C4D"
         // '&:hover': {
         //     backgroundColor: "#4E575F",
         // }
@@ -190,7 +191,7 @@ const useStyles = makeStyles((theme) => ({
                             <MenuItem className={classes.listItem} onClick={handleClose}>Inbox</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Social</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Curator</MenuItem>
-                            <hr/>
+                            <hr className='hr' />
                             <MenuItem className={classes.listItem} onClick={handleClose}>Log Out</MenuItem>
                         {/* </List> */}
                         </Menu>
