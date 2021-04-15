@@ -20,13 +20,14 @@ nav {
     margin: 0.4em;
     margin-right: 0rem;
     margin-left: 0;
+    cursor: pointer;
 
     &:first-child {
         color: $MainOrange;
         // text-shadow: #495057 1px 0 10px;
     }
     img {
-        width: 7rem;
+        width: 5rem;
         height: 4.5rem;
         color: $MainOrange;
     }

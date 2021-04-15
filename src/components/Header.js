@@ -94,7 +94,6 @@ const useStyles = makeStyles((theme) => ({
         <nav>
             <div className="header__container">
                 <div className="header__navbar">      
-    
                     <img src={logo} alt="logo" />
                     <h1 className="header__h1"> beatsUp</h1>
                 </div>

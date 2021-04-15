@@ -35,7 +35,7 @@ import { MusicContext } from '../context/musicContext';
                 
                 <div>
                     <h3>Library</h3>
-                    <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
+                    <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
                     <h3>Favourites</h3>
