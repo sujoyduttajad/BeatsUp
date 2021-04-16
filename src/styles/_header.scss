@@ -9,6 +9,7 @@ nav {
     top: 0px;
     z-index: 100;
     background-color: $BlackBackground;
+    transition: all 0.5s ease;
 }
 
 .header__navbar {
@@ -19,6 +20,7 @@ nav {
     vertical-align: middle;
     margin: 0.4em;
     margin-right: 0rem;
+    transition: all 0.5s ease;
     margin-left: 0;
     cursor: pointer;
 
@@ -33,9 +35,11 @@ nav {
     }
 }
 
-// .header__home {
-//     margin-right: 2px;
-// }
+.header__active {
+    
+    transition: all 0.5s ease;
+    padding-left: 4%;
+}
 
 .header__h1 {
     padding-top: 9px;

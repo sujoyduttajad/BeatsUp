@@ -13,7 +13,9 @@ $Orange: #EE6C4D;
     z-index: 100;
     background-color: #181A19;
     transform: translateX(-77%);
-    transition: all 0.5s ease-in-out;
+    // transition: all 0.5s ease-in-out;
+    transition-delay: 0s , 0.9s , 0.9s;
+    transition-duration: 0.5s;
     opacity: 1;
     width: 17.8rem;
     padding: 1.7rem;
@@ -40,7 +42,10 @@ $Orange: #EE6C4D;
     color: $Orange;;
     cursor: pointer;
     padding-right: 0;
-    transition: all 0.5s ease-in-out;
+    transition-delay: 0.9s;
+    transition-duration: 0.9s;
+    transition: transform 0.9s linear;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
 }
 
 .section {

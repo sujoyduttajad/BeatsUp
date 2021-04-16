@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faCog, faHeadphones, faHeadphonesAlt, faHome, faMusic, faSearch, faSmile, faSortDown, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '@material-ui/core/Avatar';
@@ -6,7 +6,7 @@ import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import {Divider, Menu, MenuItem, Fab} from '@material-ui/core';
 import logo from "../images/Group3.svg";
-
+import { MusicContext } from '../context/musicContext';
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
@@ -73,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
 
 
  const Header = () => {
+
+    // Using the context API to share state globally 
+    const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
     const classes = useStyles();
     const [open, setOpen] = useState(false);
 
@@ -80,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
         setOpen(true)
     }
     // Dropdown states
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -93,10 +96,12 @@ const useStyles = makeStyles((theme) => ({
     return (
         <nav>
             <div className="header__container">
-                <div className="header__navbar">      
+
+                <div className={`header__navbar ${libraryStatus ? "header__active" : ""}`}>      
                     <img src={logo} alt="logo" />
                     <h1 className="header__h1"> beatsUp</h1>
                 </div>
+
                 <div className="header__navbuttons">
                     <div>
                         <form class="header__form">

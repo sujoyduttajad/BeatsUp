@@ -6,12 +6,14 @@ import
         faBroadcastTower, 
         faClipboardList, 
         faCompactDisc, 
+        faCrosshairs, 
         faFolder, 
         faHeadphones, 
         faHeart, 
         faLightbulb, 
         faMicrophoneAlt, 
         faPalette, 
+        faTimes, 
         faUser, 
     } from '@fortawesome/free-solid-svg-icons';
 import { MusicContext } from '../context/musicContext';    
@@ -26,7 +28,7 @@ import { MusicContext } from '../context/musicContext';
             <FontAwesomeIcon 
                 size="2x" 
                 className="icon-bar"
-                icon={faBars} 
+                icon={libraryStatus ? faTimes: faBars} 
                 onClick={() => setLibraryStatus(!libraryStatus)} 
             />  
             <div className="sidebar__container">
