@@ -79,7 +79,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="col-lg-4">
-                <Song currentSong={currentSong}/>
+                <Song currentSong={currentSong} isPlaying={isPlaying} />
                 </div>
             </div>
             <div className="row player-container">
