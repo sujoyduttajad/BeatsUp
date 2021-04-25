@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import {Divider, Menu, MenuItem, Fab} from '@material-ui/core';
-import logo from "../images/Group3.svg";
+import logo from "../images/beatsUp.svg";
 import { MusicContext } from '../context/musicContext';
 
 const useStyles = makeStyles((theme) => ({
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
 
                 <div className={`header__navbar ${libraryStatus ? "header__active" : ""}`}>      
                     <img src={logo} alt="logo" />
-                    <h1 className="header__h1"> beatsUp</h1>
+                    <h1 className="header__h1"> Beats<span>Up</span></h1>
                 </div>
 
                 <div className="header__navbuttons">

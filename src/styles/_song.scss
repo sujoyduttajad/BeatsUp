@@ -37,6 +37,7 @@ $ShadowColor: #404340;
         transform: translate3d(0px, -2px, -4px) scale(1.06);
         transform-style: preserve-3d;
         box-shadow: $ShadowColor 0px 2px 4px 0px, $ShadowColor 0px 2px 16px 0px;
+        transition: all 0.2s ease-in-out;
     }
     
 }
