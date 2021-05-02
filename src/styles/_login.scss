@@ -1,0 +1,42 @@
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+.login__container {
+    background-color: #1E2225;
+    min-height: 100vh;
+    height: 100%;
+    @include flex(row, center, center);
+}
+
+.login__box {
+    @include flex(row, center, center);
+
+    background-color: #181A19;
+    box-shadow: 0px 5px 20px rgb(46, 45, 45);
+    width: 60vw;
+    height: 80vh; 
+    border-radius: 15px;
+}
+
+.login__side1 {
+    // background-color: #f34;
+    width: 30vw;
+    height: 80vh;
+    
+
+    @include flex(column, left, left);
+}
+
+.login__side2 {
+    background-color: #EE6C4D;
+    width: 30vw;
+    height: 80vh;
+    border-radius: 0 15px 15px 0;
+
+    @include flex(column, right, right);
+}

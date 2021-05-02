@@ -30,7 +30,7 @@ nav {
     }
     img {
         width: 5rem;
-        height: 4.5rem;
+        height: 4.2rem;
         color: $MainOrange;
     }
 }
@@ -57,6 +57,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header__home {
+    vertical-align: middle;
 }
 
 .header__container{
@@ -129,7 +132,7 @@ nav {
   color: rgb(50,50,50);
   border: 3px solid rgb(50,50,50);
   border-radius: 40px;
-  padding-left: 5px;
+  padding-left: 1.4rem;
   cursor: text;
   font-family: inherit;
   transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
@@ -170,19 +173,20 @@ nav {
     padding-right: 0.1rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	outline: none;
 	transition: all 0.3s;
     font-size: 14px;
     font-weight: 100;
     -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
     vertical-align: middle;
+    
 
     span {
         padding-left: 0.8rem;
         font-size: 17px;
         text-decoration: none;
         font-weight: 100;
+        vertical-align: middle;
     }
 }
 
@@ -227,6 +231,7 @@ nav {
     border: 0;
     border-radius: 25px;
 	margin: 5px;
+    margin-right: 3.2em;
     padding: 0.5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -243,6 +248,7 @@ nav {
         font-size: 17px;
         text-decoration: none;
         font-weight: 100;
+        vertical-align: middle;
     }
 }
 .btn-bell {
@@ -251,13 +257,14 @@ nav {
     width: 100%;
 	cursor: pointer;
     position: relative;
-    left: 7.5rem;
+    left: 8.8rem;
 	display: inline-block;
     border: none;
     border-radius: 50%;
 	margin: 0.1rem 0.01rem;
-    margin-left: 0.2rem;
-    padding: 0.91rem 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.4rem;
+    padding: 0.6rem 0.2rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	outline: none;
@@ -281,8 +288,8 @@ nav {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-    outline: none;
 }
+
 
 /* Pseudo elements for icons */
 .btn:before,
@@ -296,7 +303,6 @@ nav {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-    outline: none;
 	-webkit-font-smoothing: antialiased;
 }
 /* Button 3 */
@@ -309,14 +315,14 @@ nav {
 .btn-3:hover {
 	background: $MainOrange;
     color: #fff;
-    outline: none;
+    // outline: none;
 }
 
 .btn-3:active {
 	background: $MainOrange;
     color: #fff;
 	top: 2px;
-    outline: none;
+    // outline: none;
 }
 
 .btn-3:before {
@@ -348,3 +354,5 @@ nav {
     background-color: $MainOrange;
 }
  
+
+// stocklabs black shade - #010406

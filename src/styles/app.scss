@@ -1,8 +1,11 @@
+
+@import "./login";
 @import "./song";
 @import "./player";
 @import "./library";
 @import "./sidebar";
 @import "./header";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 // To get rid off all the default margins 
@@ -43,6 +46,15 @@ h4 {
 
 p {
     margin: 0;
+}
+
+button, button:focus, button:active, button::after {
+    outline: 0 !important;
+}
+
+a {
+    text-decoration: none !important; 
+    outline: none !important;
 }
 
 // nav {

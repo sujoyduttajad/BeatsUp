@@ -1,12 +1,16 @@
 import React, { useState, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faCog, faHeadphones, faHeadphonesAlt, faHome, faMusic, faSearch, faSmile, faSortDown, faUserSecret } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faBoxOpen, faCog, faHeadphones, faHeadphonesAlt, faHome, faMusic, faSearch, faSmile, faSortDown, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '@material-ui/core/Avatar';
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import {Divider, Menu, MenuItem, Fab} from '@material-ui/core';
 import logo from "../images/beatsUp.svg";
 import { MusicContext } from '../context/musicContext';
+import { AiFillHome } from "react-icons/ai";
+import LogIn from '../pages/LogIn';
+import { Link, NavLink } from "react-router-dom";
+
+
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
@@ -16,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 0,
       },
       position: 'relative',
-      left: '8.8rem',
+      left: '10.8rem',
       cursor: 'pointer',
       zIndex: 1
     },
@@ -24,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
         width: "50px",
         height: "36px",
         position: 'relative',
-        left: '8.2rem',
+        left: '10.2rem',
         background: "#343a40",
         borderRadius: "0px 20px 20px 0px",
         '&:hover': {
@@ -39,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
         width: '0.05rem',
         height: '3rem',
         position: 'relative',
-        left: '8rem',
+        left: '10.5rem',
         zIndex: 500,
         marginLeft: '0.2rem',
         border: `1px solid #343a40`,
@@ -58,17 +62,18 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.18rem',
         paddingLeft: '1.8rem',
         // color: "#bfc0c0",
-        color: "#EE6C4D"
-        // '&:hover': {
-        //     backgroundColor: "#4E575F",
-        // }
+        color: "#EE6C4D",
+        '&:hover': {
+            textDecoration: 'none'        
+        }
       },
       menu: {
         width: '23rem',
         padding: '10px',
         paddingBottom: '15px',
         marginTop: '3.1em'
-      }
+      },
+
   }));
 
 
@@ -78,6 +83,11 @@ const useStyles = makeStyles((theme) => ({
     const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
     const classes = useStyles();
     const [open, setOpen] = useState(false);
+    const [modalopen, setModalOpen] = React.useState(false);
+
+    // const handleModalOpen = () => {
+    //     setModalOpen(true);
+    // };
 
     const handleOpen = () => {
         setOpen(true)
@@ -92,15 +102,24 @@ const useStyles = makeStyles((theme) => ({
         setAnchorEl(null);
     };
 
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
 
     return (
         <nav>
             <div className="header__container">
-
+            {/* activeStyle - The class to give the element when it is active. 
+            The default given class is active. This will be joined with the className prop. 
+            The styles to apply to the element when it is active. */}
+            <NavLink to="/" activeStyle={{
+                    textDecoration: 'none',
+                }} >
                 <div className={`header__navbar ${libraryStatus ? "header__active" : ""}`}>      
                     <img src={logo} alt="logo" />
                     <h1 className="header__h1"> Beats<span>Up</span></h1>
                 </div>
+            </NavLink>    
 
                 <div className="header__navbuttons">
                     <div>
@@ -114,18 +133,23 @@ const useStyles = makeStyles((theme) => ({
                             />
                         </form>
                     </div>
-                    <div>
-                        <button class="btn btn-3 btn-3d">
-                            <FontAwesomeIcon 
-                                className={`header__home `} 
-                                size="2x" 
-                                icon={faHome} 
-                            />
-                            <span>Home</span>
-                        </button>
-                        
-                    </div>
-                    <div>
+                    <NavLink to="/" activeStyle={{
+                            textDecoration: 'none',
+                            outline: 'none'
+                        }}>
+                        <div>
+                            <button class="btn btn-3 btn-3d">
+                                <FontAwesomeIcon 
+                                    className={`header__home `} 
+                                    size="2x" 
+                                    icon={faHome} 
+                                />                              
+                                <span>Home</span>
+                            </button>                       
+                        </div>
+                    </NavLink>
+
+                    {/* <div>
                         <button class="btn-about btn-3 btn-3d">
                             <FontAwesomeIcon 
                                 className={`header__home `} 
@@ -134,15 +158,15 @@ const useStyles = makeStyles((theme) => ({
                             />
                             <span>About</span>
                         </button>
-                    </div>
+                    </div> */}
                     <div>
                         <button class="btn-settings btn-3 btn-3d">
                             <FontAwesomeIcon 
                                 className={`header__home `} 
                                 size="2x" 
-                                icon={faCog} 
+                                icon={faBoxOpen} 
                             />
-                            <span>Settings</span>
+                            <span>Browse</span>
                         </button>
                     </div>
                     <div>
@@ -190,17 +214,21 @@ const useStyles = makeStyles((theme) => ({
                             }}
                             className={classes.menu}
                         >
-                        {/* <List className={classes.menu}  component="nav" aria-label="main mailbox folders"> */}
+                        
                             <MenuItem className={classes.listItem} onClick={handleClose}>Profile</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Inbox</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Social</MenuItem>
-                            <MenuItem className={classes.listItem} onClick={handleClose}>Curator</MenuItem>
+                            <MenuItem className={classes.listItem} onClick={handleClose}>Settings</MenuItem>
                             <hr className='hr' />
-                            <MenuItem className={classes.listItem} onClick={handleClose}>Log Out</MenuItem>
-                        {/* </List> */}
+
+                            <NavLink to="/login" activeStyle={{                                  
+                                    outline: 'none'
+                                }} >                               
+                                <MenuItem className={classes.listItem} onClick={handleClose}>Log Out</MenuItem>                               
+                            </NavLink>
+                        
                         </Menu>
-                        </div> 
-                       
+                    </div>                                             
                 </div>
             </div>
             

@@ -3,6 +3,8 @@ import React, {useState, useRef, useContext} from 'react';
 import "../styles/app.scss";
 import Player from './Player';
 import Song from './Song';
+import Sidebar from './Sidebar';
+import Header from './Header';
 import data from '../data';
 import Library from './Library';
 import { MusicContext } from '../context/musicContext';
@@ -58,54 +60,60 @@ export default function Home() {
   }
 
   return (
-    <div className={`App`} >
+
+  <>
+      <Header />
+      <aside><Sidebar /></aside>
       
-        {/* <nav><Header /></nav> */}
-        <div className="container">
-            <div className='row player-container'>
-                <div className="col-lg-8">
-                    <Player 
-                    audioRef={audioRef}
-                    songs={songs}
-                    currentSong={currentSong}
-                    isPlaying={isPlaying}
-                    setIsPlaying={setIsPlaying} 
-                    songInfo={songInfo}
-                    setSongInfo={setSongInfo}
-                    setSongs={setSongs}
-                    setCurrentSong={setCurrentSong}
-                    setRepeat={setRepeat}
-                    repeat={repeat}
+        <div className={`App ${libraryStatus ? "library-active" : ""}`} >    
+            <div className="container">
+                <div className='row player-container'>
+                    <div className="col-lg-8">
+                        <Player 
+                        audioRef={audioRef}
+                        songs={songs}
+                        currentSong={currentSong}
+                        isPlaying={isPlaying}
+                        setIsPlaying={setIsPlaying} 
+                        songInfo={songInfo}
+                        setSongInfo={setSongInfo}
+                        setSongs={setSongs}
+                        setCurrentSong={setCurrentSong}
+                        setRepeat={setRepeat}
+                        repeat={repeat}
+                        />
+                    </div>
+                    <div className="col-lg-4">
+                    <Song currentSong={currentSong} isPlaying={isPlaying} />
+                    </div>
+                </div>
+                <div className="row player-container">
+                    <section>
+                    <Library 
+                        songs={songs}
+                        currentSong={currentSong}
+                        setCurrentSong={setCurrentSong}
+                        audioRef={audioRef} 
+                        isPlaying={isPlaying}
+                        setIsPlaying={setIsPlaying}
+                        setSongs={setSongs}
+                        songInfo={songInfo}
                     />
+                        <audio 
+                            onTimeUpdate={timeUpdateHandler}
+                            onLoadedMetadata={timeUpdateHandler} 
+                            ref={audioRef} 
+                            src={currentSong.audio}
+                            onEnded={songEndHandler}
+                        ></audio>
+                    </section>
                 </div>
-                <div className="col-lg-4">
-                <Song currentSong={currentSong} isPlaying={isPlaying} />
-                </div>
-            </div>
-            <div className="row player-container">
-                <section>
-                <Library 
-                    songs={songs}
-                    currentSong={currentSong}
-                    setCurrentSong={setCurrentSong}
-                    audioRef={audioRef} 
-                    isPlaying={isPlaying}
-                    setIsPlaying={setIsPlaying}
-                    setSongs={setSongs}
-                    songInfo={songInfo}
-                />
-                    <audio 
-                        onTimeUpdate={timeUpdateHandler}
-                        onLoadedMetadata={timeUpdateHandler} 
-                        ref={audioRef} 
-                        src={currentSong.audio}
-                        onEnded={songEndHandler}
-                    ></audio>
-                </section>
-            </div>
-      </div>
-      <footer className="footer"></footer>
-    </div>
+          </div>
+          <footer className="footer"></footer>
+        </div>
+
+
+  </>      
     
   );
 }
