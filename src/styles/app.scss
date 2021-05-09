@@ -56,6 +56,10 @@ a {
     text-decoration: none !important; 
     outline: none !important;
     color: inherit;
+
+    &:hover {
+        color: #254a8f;
+    }
 }
 
 // nav {
