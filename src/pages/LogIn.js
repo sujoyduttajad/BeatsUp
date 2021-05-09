@@ -61,12 +61,12 @@ const LogIn = () => {
                         <div>
                             <label>Password</label>
                             <input className="password" type='password' />
-                            <p>Forgot password?</p>
+                            <p><a href="#"> Forgot password?</a></p>
                         </div>
 
                         <div>
                             <button className="form__button">Log In</button>
-                            <p className="signup__link">If you haven't registered, click here</p>
+                            <p className="signup__link">If you haven't registered, <a href="#">click here</a></p>
                         </div>
                     </form>
 
