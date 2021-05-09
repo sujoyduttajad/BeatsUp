@@ -4,20 +4,50 @@ import google from '../images/google-icon 2.svg'
 import twitter from '../images/twitter-brands 1.svg'
 import facebook from '../images/facebook-brands 1.svg'
 import logo from "../images/beatsUp.svg";
-import illustration from '../images/Group 10.svg'
-import illu from '../images/listen.svg'
+import illustration from '../images/listen.svg'
+import Lottie from 'react-lottie';
+import animationIllustr from '../lotties/animation_koh2csqy.json'
+import logoAnime from '../lotties/animation_koh3fmq3.json'
 
 
 const LogIn = () => {
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationIllustr,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
+    const logoOptions = {
+        loop: false,
+        autoplay: true,
+        animationData: logoAnime,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+    }
+    };
 
     return (
         <div className="login__container">
             <div className="login__box">
                 <div className="login__side1">
-                    <img src={logo} alt="logo" />
+                    {/* <img src={logo} alt="logo" /> */}
+                    <div className="logo__container">
+                        <Lottie 
+                            options={logoOptions}
+                            height={100}
+                            width={100}
+                        />
+                    </div>    
                     <div className="illustration__container">
-                        <img src={illu} alt="Illustration" />
+                        {/* <img src={illustration} alt="Illustration" /> */}
+                        <Lottie 
+                            options={defaultOptions}
+                            height={400}
+                            width={500}
+                        />
                     </div>
                 </div>
                 <div className="login__side2">
