@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
                 <div className="header__navbuttons">
                     <div>
                         <form class="header__form">
-                            <input class="header__search__bar" placeholder="Search..." onClick={handleOpen} />
+                            <input className="header__search__bar" placeholder="Search..." onClick={handleOpen} />
                             
                             <FontAwesomeIcon 
                                 className={`header__submit `} 
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
                             outline: 'none'
                         }}>
                         <div>
-                            <button class="btn btn-3 btn-3d">
+                            <button className="btn btn-3 btn-3d">
                                 <FontAwesomeIcon 
                                     className={`header__home `} 
                                     size="2x" 
@@ -160,7 +160,7 @@ const useStyles = makeStyles((theme) => ({
                         </button>
                     </div> */}
                     <div>
-                        <button class="btn-settings btn-3 btn-3d">
+                        <button className="btn-settings btn-3 btn-3d">
                             <FontAwesomeIcon 
                                 className={`header__home `} 
                                 size="2x" 
@@ -170,7 +170,7 @@ const useStyles = makeStyles((theme) => ({
                         </button>
                     </div>
                     <div>
-                    <button class="btn-bell btn-3 btn-3d">
+                    <button className="btn-bell btn-3 btn-3d">
                             <FontAwesomeIcon 
                                 className={`header__home `} 
                                 size="2x" 

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+$greenSeaweed: rgba(2, 128, 144, 1);
+$blueQueen: rgba(69, 105, 144, 1);
+$redFire: rgba(244, 91, 105, 1);
+$primaryBlack: #181A19;
 
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -10,13 +17,16 @@
     background-color: #1E2225;
     min-height: 100vh;
     height: 100%;
+    
+
     @include flex(row, center, center);
+
 }
 
 .login__box {
     @include flex(row, center, center);
 
-    background-color: #181A19;
+    background-color: $primaryBlack;
     box-shadow: 0px 5px 20px rgb(46, 45, 45);
     width: 60vw;
     height: 80vh; 
@@ -37,6 +47,98 @@
     width: 30vw;
     height: 80vh;
     border-radius: 0 15px 15px 0;
+    // font-family: 'Varela Round', sans-serif;
+    font-family: 'Asap', sans-serif;
+    color: $primaryBlack;
+    font-weight: 500;
 
-    @include flex(column, right, right);
+    @include flex(column, center, center);
+
+    h1{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        color: $primaryBlack;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+    p{
+        margin-bottom: 5rem
+    }
 }
+
+.login__form {
+    @include flex(column, center, center);
+
+    div {
+        @include flex(column, flex-start, flex-start);
+
+        margin-bottom: 0.5rem;
+        
+        label {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.form__button {
+    font-family: inherit;
+	font-size: inherit;
+    // max-width: 25rem;
+    width: 25rem;
+	cursor: pointer;
+	display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 1rem;
+    padding: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	outline: none;
+	transition: all 0.3s;
+    font-size: 1.5em;
+    font-weight: 700;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    vertical-align: middle;
+    background-color: $primaryBlack;
+    color: #EE6C4D;
+}
+
+.username, .password {
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 25rem;
+    border: 0;
+    padding: 10px 10px;
+    margin: 1px -10px;
+    outline: 0;
+}
+
+.signup__link {
+    text-align: left;
+}
+
+// fieldset::after {
+//     content: '\f007';
+//     font-family: FontAwesome;
+//     position: absolute;
+//     right: 15px;
+//     top: 17px;
+//     z-index: 1000;
+//     width: 20px;
+//     color: hsla(0, 0, 0, 0.2);
+//     text-align: center;
+//   }
+
+// fieldset.field__email::after {
+//     content: '\f0e0';
+//     font-family: FontAwesome;
+//     position: relative;
+//     right: 5px;
+//     top: 1px;
+//     z-index: 2000;
+//     width: 20em;
+//     color: hsla(0, 0, 0, 0.2);
+//     text-align: center;
+// }
