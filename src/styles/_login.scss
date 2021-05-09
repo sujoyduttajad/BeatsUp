@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
-$greenSeaweed: rgba(2, 128, 144, 1);
-$blueQueen: rgba(69, 105, 144, 1);
-$redFire: rgba(244, 91, 105, 1);
+// $greenSeaweed: rgba(2, 128, 144, 1);
+// $blueQueen: rgba(69, 105, 144, 1);
+// $redFire: rgba(244, 91, 105, 1);
 $primaryBlack: #181A19;
 
 @mixin flex($direction, $justify, $align) {
@@ -37,9 +37,26 @@ $primaryBlack: #181A19;
     // background-color: #f34;
     width: 30vw;
     height: 80vh;
-    
+    img {
+        width: 5rem;
+        height: 4.2rem;
+        margin: 2rem
+    }
 
     @include flex(column, left, left);
+}
+
+.illustration__container {
+
+    @include flex(row, center, center);
+    
+    img {
+        max-width: 30rem;
+        max-height: 25rem;
+        width: 100%;
+        height: 100%;
+        margin: 3rem
+    }
 }
 
 .login__side2 {
@@ -60,9 +77,11 @@ $primaryBlack: #181A19;
         color: $primaryBlack;
         font-weight: 700;
         letter-spacing: 1.5px;
+
+       
     }
     p{
-        margin-bottom: 5rem
+        margin-bottom: 2rem
     }
 }
 
@@ -76,6 +95,9 @@ $primaryBlack: #181A19;
         
         label {
             font-size: 1.2rem;
+        }
+        p {
+            margin-bottom: 0;
         }
     }
 }
@@ -117,7 +139,42 @@ $primaryBlack: #181A19;
 
 .signup__link {
     text-align: left;
+    margin-bottom: 0;
 }
+
+.signup__hr{
+    background: transparent;
+    margin-bottom: 5px !important;
+    padding: 0 9px;
+}
+hr {
+    border-top: 1px solid $primaryBlack;
+    width: 35%;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+.social-media {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    // padding: 3rem;
+    // background: transparent;
+    border: 0;
+    outline: 0;
+    margin: 1rem;
+
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 
 // fieldset::after {
 //     content: '\f007';
