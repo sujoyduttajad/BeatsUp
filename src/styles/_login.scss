@@ -50,12 +50,14 @@ $ShadowColor: #404340;
 .logo__container {
     // @include flex(column, left, flex-start);
     padding-right: 22rem;
+    margin-top: 5px;
+    margin-bottom: 3rem;
 }
 
 .illustration__container {
 
     @include flex(row, center, center);
-    
+    margin-bottom: 4rem;
     img {
         max-width: 30rem;
         max-height: 25rem;
