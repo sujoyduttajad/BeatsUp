@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import google from '../images/google-icon 2.svg'
 import twitter from '../images/twitter-brands 1.svg'
-import facebook from '../images/facebook-brands 1.svg'
+import facebook from '../images/Facebook Light.svg'
 import logo from "../images/beatsUp.svg";
 import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
