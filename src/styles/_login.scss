@@ -177,7 +177,7 @@ hr {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(240, 240, 240, 0.7);
     border: 0;
     outline: 0;
     margin: 1rem;
@@ -188,34 +188,12 @@ hr {
     }
 
     &:hover {
-        transform: translate3d(0px, -2px, -4px) scale(1.06);
+        transform: translate3d(0px, -2px, -4px) scale(1.15);
         transform-style: preserve-3d;
-        box-shadow: $ShadowColor 0px 2px 4px 0px, $ShadowColor 0px 2px 16px 0px;
+        box-shadow: $ShadowColor 1px 1px 4px 0px, $ShadowColor 0px 1px 6px 1.5px;
         transition: all 0.2s ease-in-out;
+        background-color: rgba(240, 240, 240, 0.9);
     }
 }
 
 
-// fieldset::after {
-//     content: '\f007';
-//     font-family: FontAwesome;
-//     position: absolute;
-//     right: 15px;
-//     top: 17px;
-//     z-index: 1000;
-//     width: 20px;
-//     color: hsla(0, 0, 0, 0.2);
-//     text-align: center;
-//   }
-
-// fieldset.field__email::after {
-//     content: '\f0e0';
-//     font-family: FontAwesome;
-//     position: relative;
-//     right: 5px;
-//     top: 1px;
-//     z-index: 2000;
-//     width: 20em;
-//     color: hsla(0, 0, 0, 0.2);
-//     text-align: center;
-// }
