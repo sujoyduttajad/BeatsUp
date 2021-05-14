@@ -8,7 +8,7 @@ import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
 import animationIllustr from '../lotties/animation_koh2csqy.json'
 import logoAnime from '../lotties/animation_koh3fmq3.json'
-
+import { Link, NavLink } from "react-router-dom";
 
 const LogIn = () => {
 
@@ -65,8 +65,12 @@ const LogIn = () => {
                         </div>
 
                         <div>
-                            <button className="form__button">Log In</button>
-                            <p className="signup__link">If you haven't registered, <a href="#">click here</a></p>
+                            <NavLink to="/" activeStyle={{                                  
+                                    outline: 'none'
+                                }} > 
+                                <button className="form__button">Log In</button>
+                            </NavLink>  
+                            <p className="signup__link">Don't have an account, <a href="#">Sign Up</a></p>
                         </div>
                     </form>
 

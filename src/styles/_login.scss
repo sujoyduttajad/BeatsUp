@@ -101,14 +101,17 @@ $ShadowColor: #404340;
         margin-bottom: 0.5rem;
         
         label {
-            font-size: 1.3rem;
-            letter-spacing: 1px;
+            font-size: 1.5rem;
+            letter-spacing: 1.9px;
             font-weight: 600;
             margin-bottom: 0;
             margin-top: 6px;
         }
         p {
             margin-bottom: 0;
+            a {
+                color: #fefefe;
+            }
         }
     }
 }
@@ -121,9 +124,9 @@ $ShadowColor: #404340;
 	cursor: pointer;
 	display: inline-block;
     border: 0;
-    border-radius: 6px;
+    border-radius: 25px;
     margin-top: 1rem;
-    padding: 0.6rem;
+    padding: 0.4rem;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	outline: none;
@@ -137,18 +140,20 @@ $ShadowColor: #404340;
     color: #EE6C4D;
 
     &:hover {
-        box-shadow: 0px 2px 10px rgb(71, 71, 71);
+        box-shadow: 0px 2px 10px $ShadowColor;
         // box-shadow: $ShadowColor 0px 2px 4px 0px, $ShadowColor 0px 2px 16px 0px;
     }
 }
 
 .username, .password {
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 18px;
     background: white;
     width: 25rem;
     border: 0;
-    padding: 4px 10px;
+    font-size: 1.3em;
+    // padding: 4px 10px;
+    padding: 0.35rem 1rem;
     margin: 1px -10px;
     outline: 0;
 }
@@ -156,6 +161,7 @@ $ShadowColor: #404340;
 .signup__link {
     text-align: left;
     margin-bottom: 0;
+    margin-left: 1rem;
 }
 
 .signup__hr{
@@ -179,7 +185,7 @@ hr {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(240, 240, 240, 0.99);
     border: 0;
     outline: 0;
     margin: 1rem;

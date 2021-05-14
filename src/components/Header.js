@@ -219,7 +219,7 @@ const useStyles = makeStyles((theme) => ({
                             <MenuItem className={classes.listItem} onClick={handleClose}>Inbox</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Social</MenuItem>
                             <MenuItem className={classes.listItem} onClick={handleClose}>Settings</MenuItem>
-                            <hr className='hr' />
+                            <hr className='hr-dropdown' />
 
                             <NavLink to="/login" activeStyle={{                                  
                                     outline: 'none'

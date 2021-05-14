@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 $lightShade : #f8f9fa;
 $MainOrange: #EE6C4D;
 $BlackBackground: #181A19;
 $ButtonsBackground: #1E2225;
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+$LexenDeca: 'Lexend Deca', sans-serif;
 
 nav {
     position: sticky;
@@ -45,6 +48,7 @@ nav {
     color: $MainOrange;
     // font-family: 'Comfortaa', cursive;
     font-family: 'Padauk', sans-serif;
+    font-family: $LexenDeca;
     padding-left: 18px;
     margin-left: 0;
 
@@ -86,7 +90,7 @@ nav {
     z-index: 0;
     transition: all 300ms linear;
     font-size: 23px;
-    font-family: inherit;
+    font-family: $LexenDeca;
     margin-top: 0.3rem;
     margin-left: 2.1rem;
     padding: 4px 2px;
@@ -158,8 +162,9 @@ nav {
 
 .btn {
     
-	font-family: inherit;
-	font-size: inherit;
+	font-family: $LexenDeca;
+    font-size: 14px;
+    font-weight: 100;
     width: 9.5rem;
 	cursor: pointer;
     position: relative;
@@ -174,8 +179,6 @@ nav {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: all 0.3s;
-    font-size: 14px;
-    font-weight: 100;
     -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
     vertical-align: middle;
@@ -183,47 +186,48 @@ nav {
 
     span {
         padding-left: 0.8rem;
-        font-size: 17px;
+        font-size: 1.3rem;
         text-decoration: none;
         font-weight: 100;
         vertical-align: middle;
     }
 }
 
-.btn-about {
-    font-family: inherit;
-	font-size: inherit;
-    width: 9rem;
-	cursor: pointer;
-    position: relative;
-    left: 6rem;
-	display: inline-block;
-    border: 0;
-    border-radius: 25px;
-	margin: 5px;
-    padding: 0.5rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	outline: none;
-	transition: all 0.3s;
-    font-size: 14px;
-    font-weight: 100;
-    -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-    vertical-align: middle;
+// .btn-about {
+//     font-family: ;
+// 	font-size: inherit;
+//     width: 9rem;
+// 	cursor: pointer;
+//     position: relative;
+//     left: 6rem;
+// 	display: inline-block;
+//     border: 0;
+//     border-radius: 25px;
+// 	margin: 5px;
+//     padding: 0.5rem;
+// 	text-transform: uppercase;
+// 	letter-spacing: 1px;
+// 	outline: none;
+// 	transition: all 0.3s;
+//     font-size: 14px;
+//     font-weight: 100;
+//     -webkit-transition: all 0.3s;
+// 	-moz-transition: all 0.3s;
+//     vertical-align: middle;
 
-    span {
-        padding-left: 0.8rem;
-        font-size: 17px;
-        text-decoration: none;
-        font-weight: 100;
-    }
-}
+//     span {
+//         padding-left: 0.8rem;
+//         font-size: 17px;
+//         text-decoration: none;
+//         font-weight: 100;
+//     }
+// }
 
 .btn-settings {
-    font-family: inherit;
-	font-size: inherit;
-    width: 10.5rem;
+    font-family: $LexenDeca;
+	font-size: 14px;
+    font-weight: 100;
+    width: 11.5rem;
 	cursor: pointer;
     position: relative;
     left: 6rem;
@@ -237,15 +241,14 @@ nav {
 	letter-spacing: 1px;
 	outline: none;
 	transition: all 0.3s;
-    font-size: 14px;
-    font-weight: 100;
+    
     -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
     vertical-align: middle;
 
     span {
         padding-left: 0.8rem;
-        font-size: 17px;
+        font-size: 1.3rem;
         text-decoration: none;
         font-weight: 100;
         vertical-align: middle;
@@ -350,8 +353,10 @@ nav {
     border-radius: 10px !important;
     width: 9.5rem !important;
 }
-.hr {
+.hr-dropdown {
     background-color: $MainOrange;
+    width: 100%;
+    border-bottom: 1px solid $MainOrange;
 }
  
 
