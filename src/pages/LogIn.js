@@ -32,8 +32,7 @@ const LogIn = () => {
     return (
         <div className="login__container">
             <div className="login__box">
-                <div className="login__side1">
-                    {/* <img src={logo} alt="logo" /> */}
+                <div className="login__side1">                
                     <div className="logo__container">
                         <Lottie 
                             options={logoOptions}
@@ -42,8 +41,7 @@ const LogIn = () => {
                         />
                         <img src={logo} alt="logo" />
                     </div>    
-                    <div className="illustration__container">
-                        {/* <img src={illustration} alt="Illustration" /> */}
+                    <div className="illustration__container">                      
                         <Lottie 
                             options={defaultOptions}
                             height={400}

@@ -50,7 +50,7 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="signup__side1">
-                    
+                    <h1>Create a new account</h1>
                     <form className="login__form">
                         <div>
                             <label>Firstname</label>                                                     
