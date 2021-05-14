@@ -5,6 +5,8 @@
 
 $primaryBlack: #181A19;
 $ShadowColor: #404340;
+$LexenDeca: 'Lexend Deca', sans-serif;
+
 
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -34,23 +36,23 @@ $ShadowColor: #404340;
 
 .signup__side1 {
     background-color: #EE6C4D;
-    width: 32vw;
+    width: 35vw;
     height: 85vh;
     border-radius: 0 15px 15px 0;
     font-family: 'Asap', sans-serif;
+    // font-family: $LexenDeca;
     color: $primaryBlack;
-    font-weight: 500;
 
     @include flex(column, space-evenly, center);
 
     h1{
         margin-bottom: 1rem;
-        margin-top: 2rem;
+        margin-top: 1.2rem;
         color: $primaryBlack;
         font-weight: 700;
         letter-spacing: 1.5px;
-        font-size: 3.3rem;
-       
+        font-size: 2.8rem;
+        font-family: $LexenDeca;
     }
     p{
         margin-bottom: 2rem
@@ -60,11 +62,6 @@ $ShadowColor: #404340;
 .signup__side2 {
     width: 30vw;
     height: 80vh;
-    // img {
-    //     width: 5rem;
-    //     height: 4.2rem;
-    //     margin: 2rem
-    // }
 
     @include flex(column, space-evenly, left);
 }
@@ -175,7 +172,7 @@ $ShadowColor: #404340;
     background: transparent;
     margin-bottom: 5px !important;
     padding: 0 8px;
-    width: 8rem;
+    width: 9rem;
     @include flex(column, center, center);
 }
 hr {
