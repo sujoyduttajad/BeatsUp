@@ -32,7 +32,7 @@ const SignUp = () => {
     return (
         <div className="login__container">
             <div className="login__box">
-                <div className="login__side2">
+                <div className="signup__side2">
                     {/* <img src={logo} alt="logo" /> */}
                     <div className="logo__container">
                         <Lottie 
@@ -43,7 +43,7 @@ const SignUp = () => {
                         <img src={logo} alt="logo" />
                     </div>    
                     <div className="illustration__container">
-                        {/* <img src={illustration} alt="Illustration" /> */}
+                        
                         <Lottie 
                             options={defaultOptions}
                             height={400}
@@ -51,9 +51,8 @@ const SignUp = () => {
                         />
                     </div>
                 </div>
-                <div className="login__side1">
-                    {/* <h1>🎉Welcome Back</h1>
-                    <p>Login with your email you entered during signup</p> */}
+                <div className="signup__side1">
+                    
                     <form className="login__form">
                         <div>
                             <label>Firstname</label>                                                     
@@ -70,7 +69,6 @@ const SignUp = () => {
                         <div>
                             <label>Password</label>
                             <input className="password" type='password' />
-                            <p><a href="#"> Forgot password?</a></p>
                         </div>
 
                         <div>
