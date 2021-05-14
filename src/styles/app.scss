@@ -1,10 +1,11 @@
 
-@import "./login";
-@import "./song";
-@import "./player";
-@import "./library";
-@import "./sidebar";
-@import "./header";
+@import "./_login.scss";
+@import "./_signup.scss";
+@import "./_song.scss";
+@import "./_player.scss";
+@import "./_library.scss";
+@import "./_sidebar.scss";
+@import "./_header.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
