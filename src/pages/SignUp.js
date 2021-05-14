@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import google from '../images/google-icon 2.svg'
 import twitter from '../images/twitter-brands 1.svg'
 import facebook from '../images/Facebook Light.svg'
-import logo from "../images/logoName.svg";
+import logo from "../images/BrandName.svg";
 import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
 import animationIllustr from '../lotties/animation_koh2csqy.json'
@@ -30,10 +30,9 @@ const SignUp = () => {
     };
 
     return (
-        <div className="login__container">
-            <div className="login__box">
+        <div className="signup__container">
+            <div className="signup__box">
                 <div className="signup__side2">
-                    {/* <img src={logo} alt="logo" /> */}
                     <div className="logo__container">
                         <Lottie 
                             options={logoOptions}
@@ -43,7 +42,6 @@ const SignUp = () => {
                         <img src={logo} alt="logo" />
                     </div>    
                     <div className="illustration__container">
-                        
                         <Lottie 
                             options={defaultOptions}
                             height={400}
