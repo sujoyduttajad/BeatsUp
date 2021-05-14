@@ -71,7 +71,12 @@ const LogIn = () => {
                                 }} > 
                                 <button className="form__button">Log In</button>
                             </NavLink>  
-                            <p className="signup__link">Don't have an account, <a href="#">Sign Up</a></p>
+                            <p className="signup__link">Don't have an account, 
+                            <NavLink to="/SignUp" activeStyle={{                                  
+                                    outline: 'none'
+                                }} > <span>Sign Up</span>
+                            </NavLink>    
+                                </p>
                         </div>
                     </form>
 
