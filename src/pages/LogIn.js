@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import google from '../images/google-icon 2.svg'
 import twitter from '../images/twitter-brands 1.svg'
 import facebook from '../images/Facebook Light.svg'
-import logo from "../images/beatsUp.svg";
+import logo from "../images/logoName.svg";
 import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
 import animationIllustr from '../lotties/animation_koh2csqy.json'
@@ -40,6 +40,7 @@ const LogIn = () => {
                             height={100}
                             width={100}
                         />
+                        <img src={logo} alt="logo" />
                     </div>    
                     <div className="illustration__container">
                         {/* <img src={illustration} alt="Illustration" /> */}
