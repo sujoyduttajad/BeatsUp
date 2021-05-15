@@ -26,19 +26,18 @@ $ShadowColor: #404340;
 }
 
 .login__box {
-    @include flex(row, center, center);
+    @include flex(row, space-between, center);
 
     background-color: $primaryBlack;
     box-shadow: 0px 5px 20px rgb(46, 45, 45);
-    width: 60vw;
-    height: 80vh; 
+    width: 70vw;
+    height: 85vh;  
     border-radius: 15px;
 }
 
 .login__side1 {
-    // background-color: #f34;
-    width: 30vw;
-    height: 80vh;
+    width: 35vw;
+    height: 85vh;
     img {
         width: 5rem;
         height: 4.2rem;
@@ -48,13 +47,38 @@ $ShadowColor: #404340;
     @include flex(column, space-evenly, left);
 }
 
+.login__side2 {
+    background-color: #EE6C4D;
+    width: 32vw;
+    height: 85vh;
+    border-radius: 0 15px 15px 0;
+    font-family: 'Asap', sans-serif;
+    color: $primaryBlack;
+    font-weight: 500;
+
+    @include flex(column, center, center);
+
+    h1{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        color: $primaryBlack;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        font-size: 3.3rem;
+       
+    }
+    p{
+        margin-bottom: 2rem
+    }
+}
+
 .logo__container {
     
     padding-right: 10rem;
-    padding-left: 10px;
+    padding-left: 6.5rem;
     margin-top: 5px;
     margin-bottom: 3rem;
-    @include flex(row, flex-start, center);
+    @include flex(row, space-around, center);
 
     img {
         width: 13rem;
@@ -76,30 +100,7 @@ $ShadowColor: #404340;
     }
 }
 
-.login__side2 {
-    background-color: #EE6C4D;
-    width: 30vw;
-    height: 80vh;
-    border-radius: 0 15px 15px 0;
-    font-family: 'Asap', sans-serif;
-    color: $primaryBlack;
-    font-weight: 500;
 
-    @include flex(column, center, center);
-
-    h1{
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-        color: $primaryBlack;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        font-size: 3.3rem;
-       
-    }
-    p{
-        margin-bottom: 2rem
-    }
-}
 
 .login__form {
     @include flex(column, center, center);

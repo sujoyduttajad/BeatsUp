@@ -44,8 +44,8 @@ const SignUp = () => {
                     <div className="illustration__container">
                         <Lottie 
                             options={defaultOptions}
-                            height={400}
-                            width={500}
+                            height={420}
+                            width={560}
                         />
                     </div>
                 </div>
