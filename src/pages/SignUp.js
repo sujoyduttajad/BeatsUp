@@ -33,8 +33,8 @@ const SignUp = () => {
         <div className="signup__container">
             <div className="signup__box">            
                 <div className="signup__side1">
-                    <h1>Alrighty! Let's get started</h1>
-                    <form className="login__form">
+                    <h1>Alrighty! <span>Let's get started</span></h1>
+                    <form className="signup__form">
                         <div>
                             <label>Firstname</label>                                                     
                             <input className="username" type='text' />                           
@@ -62,7 +62,7 @@ const SignUp = () => {
                         </div>
                     </form>
 
-                    <div className='divider'> 
+                    {/* <div className='divider'> 
                         <hr/>
                         <p className="signup__hr">Or SignUp with</p>
                         <hr/>
@@ -78,7 +78,7 @@ const SignUp = () => {
                         <button className="social-media">
                             <img src={google} alt="Google" />
                         </button>
-                    </div>  
+                    </div>   */}
                 </div>
                 <div className="signup__side2">
                     <div className="signup__logo__container">
