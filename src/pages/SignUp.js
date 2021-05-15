@@ -33,7 +33,7 @@ const SignUp = () => {
         <div className="signup__container">
             <div className="signup__box">            
                 <div className="signup__side1">
-                    <h1>Create a new account</h1>
+                    <h1>Alrighty! Let's get started</h1>
                     <form className="login__form">
                         <div>
                             <label>Firstname</label>                                                     
@@ -53,7 +53,7 @@ const SignUp = () => {
                         </div>
 
                         <div>
-                            <NavLink to="/" activeStyle={{                                  
+                            <NavLink to="/login" activeStyle={{                                  
                                     outline: 'none'
                                 }} > 
                                 <button className="form__button">Sign Up</button>
@@ -81,7 +81,7 @@ const SignUp = () => {
                     </div>  
                 </div>
                 <div className="signup__side2">
-                    <div className="logo__container">
+                    <div className="signup__logo__container">
                         <Lottie 
                             options={logoOptions}
                             height={100}
