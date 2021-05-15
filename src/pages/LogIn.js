@@ -50,7 +50,7 @@ const LogIn = () => {
                     </div>
                 </div>
                 <div className="login__side2">
-                    <h1>🎉Welcome Back</h1>
+                    <h1><span>🎉</span>Welcome Back</h1>
                     <p>Login with your email you entered during signup</p>
                     <form className="login__form">
                         <div>
