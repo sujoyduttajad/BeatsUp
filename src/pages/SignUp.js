@@ -6,7 +6,7 @@ import facebook from '../images/Facebook Light.svg'
 import logo from "../images/BrandName.svg";
 import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
-import animationIllustr from '../lotties/animation_koh2csqy.json'
+import animationIllustr from '../lotties/lf30_editor_cstrm7zg.json'
 import logoAnime from '../lotties/animation_koh3fmq3.json'
 import { Link, NavLink } from "react-router-dom";
 
@@ -31,24 +31,7 @@ const SignUp = () => {
 
     return (
         <div className="signup__container">
-            <div className="signup__box">
-                <div className="signup__side2">
-                    <div className="logo__container">
-                        <Lottie 
-                            options={logoOptions}
-                            height={100}
-                            width={100}
-                        />
-                        <img src={logo} alt="logo" />
-                    </div>    
-                    <div className="illustration__container">
-                        <Lottie 
-                            options={defaultOptions}
-                            height={420}
-                            width={560}
-                        />
-                    </div>
-                </div>
+            <div className="signup__box">            
                 <div className="signup__side1">
                     <h1>Create a new account</h1>
                     <form className="login__form">
@@ -96,6 +79,23 @@ const SignUp = () => {
                             <img src={google} alt="Google" />
                         </button>
                     </div>  
+                </div>
+                <div className="signup__side2">
+                    <div className="logo__container">
+                        <Lottie 
+                            options={logoOptions}
+                            height={100}
+                            width={100}
+                        />
+                        <img src={logo} alt="logo" />
+                    </div>    
+                    <div className="illustration__container">
+                        <Lottie 
+                            options={defaultOptions}
+                            height={420}
+                            width={560}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
