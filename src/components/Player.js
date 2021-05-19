@@ -208,7 +208,7 @@ export default function Player({
                         <FontAwesomeIcon                        
                             className="play" 
                             onClick={playSongHandler}
-                            size="3x" 
+                            size="4x" 
                             icon={isPlaying ? faPause : faPlay} 
                         />
                         </Button>
@@ -272,10 +272,6 @@ export default function Player({
                         defaultValue={30}
                         onChange={handleVolumeChange}
                         aria-labelledby="vertical-slider"
-                        // step={0.1}
-                        // min={0}
-                        // max={1.0}
-                        // // value={value * 10}
                     />
                 </div>
                 <CustomTooltip title={`${mute ? 'Unmute' : 'Mute'}`} arrow placement="bottom">
