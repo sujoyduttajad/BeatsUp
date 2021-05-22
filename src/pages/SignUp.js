@@ -51,6 +51,9 @@ const SignUp = () => {
                             <label>Password</label>
                             <input className="password" type='password' />
                         </div>
+                        <div>
+                        <p><a href="#"> Forgot password?</a></p>
+                        </div>
 
                         <div>
                             <NavLink to="/login" activeStyle={{                                  
@@ -58,7 +61,12 @@ const SignUp = () => {
                                 }} > 
                                 <button className="form__button">Sign Up</button>
                             </NavLink>  
-                            
+                            <p className="signup__link">Already have an account, 
+                                <NavLink to="/login" activeStyle={{                                  
+                                        outline: 'none'
+                                    }} > <span>Log In</span>
+                                </NavLink>    
+                            </p>
                         </div>
                     </form>
 

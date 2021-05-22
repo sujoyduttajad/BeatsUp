@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Ubuntu&display=swap');
 
-// $greenSeaweed: rgba(2, 128, 144, 1);
-// $blueQueen: rgba(69, 105, 144, 1);
-// $redFire: rgba(244, 91, 105, 1);
+$Quicksand: 'Quicksand', sans-serif;
 $primaryBlack: #181A19;
 $ShadowColor: #404340;
 
@@ -52,7 +51,8 @@ $ShadowColor: #404340;
     width: 32vw;
     height: 85vh;
     border-radius: 0 15px 15px 0;
-    font-family: 'Asap', sans-serif;
+    // font-family: 'Asap', sans-serif;
+    font-family: $Quicksand;
     color: $primaryBlack;
     font-weight: 500;
 
