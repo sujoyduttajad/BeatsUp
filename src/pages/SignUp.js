@@ -69,7 +69,7 @@ const SignUp = () => {
                                 color="default"
                                 className={classes.root}
                             />
-                            <p>I agree to all the <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Fees</a></p>
+                            <p>I agree to all the <a href="#">Terms</a> , <a href="#">Privacy Policy</a> and <a href="#">Fees</a></p>
                         </div>
                         <div>
                             <NavLink to="/login" activeStyle={{                                  
