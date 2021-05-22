@@ -223,6 +223,18 @@ hr {
     width: 100%;
     p {
         margin-bottom: 0;
+        a {
+            color: #fefefe;
+        }
     }
 }
 
+.signup__link {
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    a {
+        color: #fefefe;
+    }
+}

@@ -5,9 +5,20 @@ import animationIllustr from '../lotties/lf30_editor_cstrm7zg.json'
 import logoAnime from '../lotties/animation_koh3fmq3.json'
 import { Link, NavLink } from "react-router-dom";
 import {Checkbox, FormGroup, FormControlLabel} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    root: {
+      color: '#181A19',
+      '&:before': {
+        color: '#181A19'
+      }
+    },
+})
 
 const SignUp = () => {
 
+    const classes = useStyles();
     const [checked, setChecked] = React.useState(true);
 
     const handleChange = (event) => {
@@ -55,18 +66,11 @@ const SignUp = () => {
                         </div>
                         <div className="checkbox">
                             <Checkbox
-                                defaultChecked
-                                color="primary"
-                                inputProps={{ 'aria-label': 'secondary checkbox' }}
+                                color="default"
+                                className={classes.root}
                             />
-                            <p> Forgot password?</p>
+                            <p>I agree to all the <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Fees</a></p>
                         </div>
-                        {/* <FormGroup row>
-                            <FormControlLabel
-                                control={<Checkbox checked={checked} onChange={handleChange} name="checkedA" />}
-                                label=""
-                            />
-                        </FormGroup> */}
                         <div>
                             <NavLink to="/login" activeStyle={{                                  
                                     outline: 'none'
