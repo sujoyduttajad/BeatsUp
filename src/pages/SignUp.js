@@ -1,17 +1,19 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import google from '../images/google-icon 2.svg'
-import twitter from '../images/twitter-brands 1.svg'
-import facebook from '../images/Facebook Light.svg'
 import logo from "../images/BrandName.svg";
-import illustration from '../images/listen.svg'
 import Lottie from 'react-lottie';
 import animationIllustr from '../lotties/lf30_editor_cstrm7zg.json'
 import logoAnime from '../lotties/animation_koh3fmq3.json'
 import { Link, NavLink } from "react-router-dom";
+import {Checkbox, FormGroup, FormControlLabel} from '@material-ui/core';
 
 const SignUp = () => {
 
+    const [checked, setChecked] = React.useState(true);
+
+    const handleChange = (event) => {
+        setChecked(event.target.checked);
+    };
+    
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -35,26 +37,36 @@ const SignUp = () => {
                 <div className="signup__side1">
                     <h1>Alrighty! <span>Let's get started</span></h1>
                     <form className="signup__form">
-                        <div>
+                        <div className="signup__input">
                             <label>Firstname</label>                                                     
                             <input className="username" type='text' />                           
                         </div>
-                        <div>
+                        <div className="signup__input">
                             <label>Lastname</label>                                                     
                             <input className="username" type='text' />                           
                         </div>
-                        <div>
+                        <div className="signup__input">
                             <label>Email</label>                                                     
                             <input className="username" type='email' />                           
                         </div>
-                        <div>
+                        <div className="signup__input">
                             <label>Password</label>
                             <input className="password" type='password' />
                         </div>
-                        <div>
-                        <p><a href="#"> Forgot password?</a></p>
+                        <div className="checkbox">
+                            <Checkbox
+                                defaultChecked
+                                color="primary"
+                                inputProps={{ 'aria-label': 'secondary checkbox' }}
+                            />
+                            <p> Forgot password?</p>
                         </div>
-
+                        {/* <FormGroup row>
+                            <FormControlLabel
+                                control={<Checkbox checked={checked} onChange={handleChange} name="checkedA" />}
+                                label=""
+                            />
+                        </FormGroup> */}
                         <div>
                             <NavLink to="/login" activeStyle={{                                  
                                     outline: 'none'

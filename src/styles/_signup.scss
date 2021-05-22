@@ -102,7 +102,7 @@ $Quicksand: 'Quicksand', sans-serif;
 .signup__form {
     @include flex(column, center, center);
     margin-bottom: 5rem;
-    div {
+    .signup__input {
         @include flex(column, flex-start, flex-start);
 
         margin-bottom: 0.5rem;
@@ -215,4 +215,14 @@ hr {
     }
 }
 
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    p {
+        margin-bottom: 0;
+    }
+}
 
