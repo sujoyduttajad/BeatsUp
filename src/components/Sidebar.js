@@ -13,6 +13,7 @@ import
         faLightbulb, 
         faMicrophoneAlt, 
         faPalette, 
+        faSmile, 
         faTimes, 
         faUser, 
     } from '@fortawesome/free-solid-svg-icons';
@@ -92,6 +93,7 @@ import { NavLink } from "react-router-dom";
                 <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
                 <div>
                     <h3>About Us</h3>
+                    <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faSmile} /></span>
                 </div>
                 </NavLink>
             </section>
