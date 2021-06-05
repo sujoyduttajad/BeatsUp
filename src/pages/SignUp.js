@@ -86,23 +86,6 @@ const SignUp = () => {
                         </div>
                     </form>
 
-                    {/* <div className='divider'> 
-                        <hr/>
-                        <p className="signup__hr">Or SignUp with</p>
-                        <hr/>
-                    </div>  
-
-                    <div>
-                        <button className="social-media">
-                            <img src={facebook} alt="Facebbok" />
-                        </button>
-                        <button className="social-media">
-                            <img src={twitter} alt="Twitter" />
-                        </button>
-                        <button className="social-media">
-                            <img src={google} alt="Google" />
-                        </button>
-                    </div>   */}
                 </div>
                 <div className="signup__side2">
                     <div className="signup__logo__container">
