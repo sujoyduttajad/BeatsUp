@@ -38,23 +38,23 @@ import { NavLink } from "react-router-dom";
                 <p>Collection</p>
                 
                 <div>
-                    <h3>Library</h3>
+                    <div><h3>Library</h3></div>
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
-                    <h3>Favourites</h3>
+                    <div><h3>Favourites</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
                 </div>
                 <div>
-                    <h3>Playlist</h3>
+                    <div><h3>Playlist</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faCompactDisc} /></span>
                 </div>
                 <div>
-                    <h3>Artists</h3>
+                    <div><h3>Artists</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faUser} /></span>
                 </div>
                 <div>
-                    <h3>Albums</h3>
+                    <div><h3>Albums</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faFolder} /></span>
                 </div>
             </section>            
@@ -63,15 +63,15 @@ import { NavLink } from "react-router-dom";
                 <p>Custom</p>
 
                 <div>
-                    <h3>Themes</h3>
+                    <div><h3>Themes</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faPalette} /></span>
                 </div>
                 <div>
-                    <h3>Dark</h3>
+                    <div><h3>Dark</h3></div>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faLightbulb} /></span>
                 </div>
                 <div>
-                    <h3>Karaoke</h3>
+                    <div><h3>Karaoke</h3></div>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faMicrophoneAlt} /></span>
                 </div>
             </section>
@@ -80,11 +80,11 @@ import { NavLink } from "react-router-dom";
                 <p>Apps</p>
 
                 <div>
-                    <h3>Radio</h3>
+                    <div><h3>Radio</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faBroadcastTower} /></span>
                 </div>
                 <div>
-                    <h3>Top-Charts</h3>
+                    <div><h3>Top-Charts</h3></div>
                     <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faHeadphones} /></span>
                 </div>
             </section>
@@ -92,7 +92,7 @@ import { NavLink } from "react-router-dom";
             <section className="section">
                 <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
                 <div>
-                    <h3>About Us</h3>
+                    <div><h3>About Us</h3></div>
                     <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faSmile} /></span>
                 </div>
                 </NavLink>
