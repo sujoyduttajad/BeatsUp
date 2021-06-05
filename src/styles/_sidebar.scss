@@ -14,9 +14,9 @@ $Orange: #EE6C4D;
     left: 0;
     bottom: 10;
     z-index: 100;
+    font-family: $LexenDeca;
     background-color: #181A19;
     transform: translateX(-77%);
-    // transition: all 0.5s ease-in-out;
     transition-delay: 0s , 0.9s , 0.9s;
     transition-duration: 0.5s;
     opacity: 1;
@@ -27,7 +27,7 @@ $Orange: #EE6C4D;
     
     h3{
         color: $Orange;
-        padding-right: 2.5rem;
+        padding-right: 2.6rem;
     }
     p {
         color: darkgrey;
