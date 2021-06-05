@@ -9,22 +9,37 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     align-items: $align;
     justify-content: $justify;
 }
-.about-container, .bio-data {
+.about-container, .bioData-container {
     @include flex(row, space-between, center);
     background-color: #202020;
     max-width: 100vw;
     width: 100vw;
     max-height: 100vh;
     height: 100vh;
+    font-family: $LexenDeca;
 }
 
-.bio-data {
+.bioData-container {
     @include flex(row, space-between, center);
     background-color: #EE6C4D;
     
-    h1, p {
+    
+}
+.bioData-intro {
+    position: absolute;
+    top: 70rem;
+    left: 6rem;
+    h1 {
         color: #202020;
+        font-size: 8rem;
     }
+    h2 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+
 }
 
 .about {
@@ -36,7 +51,6 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     top: 42px;
     right: 6rem;
     margin-top: 4rem;
-    font-family: $LexenDeca;
 
     h1 {
         color: #EE6C4D;

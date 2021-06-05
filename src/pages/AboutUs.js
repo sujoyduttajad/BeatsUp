@@ -51,9 +51,12 @@ const AboutUs = () => {
                 </div>
                  
                 </section>
-                <section className="bio-data">
-                   <h1>Hi, I am Sujoy</h1>
-                   <p></p>
+                <section className="bioData-container">
+                    <div className="bioData-intro">
+                        <h1>Hi,</h1> 
+                        <h2>I am Sujoy Dutta</h2>
+                        <p>Frontend Developer</p>
+                   </div>
                 </section>
             
         </div>
