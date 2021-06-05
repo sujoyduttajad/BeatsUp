@@ -6,9 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import {Divider, Menu, MenuItem, Fab} from '@material-ui/core';
 import logo from "../images/beatsUp.svg";
 import { MusicContext } from '../context/musicContext';
-import { AiFillHome } from "react-icons/ai";
 import LogIn from '../pages/LogIn';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 

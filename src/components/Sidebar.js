@@ -16,7 +16,8 @@ import
         faTimes, 
         faUser, 
     } from '@fortawesome/free-solid-svg-icons';
-import { MusicContext } from '../context/musicContext';    
+import { MusicContext } from '../context/musicContext';   
+import { NavLink } from "react-router-dom"; 
 
  const Sidebar = () => {
 
@@ -88,9 +89,11 @@ import { MusicContext } from '../context/musicContext';
             </section>
                    
             <section className="section">
+                <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
                 <div>
                     <h3>About Us</h3>
                 </div>
+                </NavLink>
             </section>
 
             </div>           
