@@ -42,14 +42,18 @@ const AboutUs = () => {
                     <h1>About Us</h1>
                     <p>Hi, I am Sujoy the creator of BeatsUp, a music app that plays chill music from any devices you want to play, it's a 
                         responsive web app for now but I'm planning to migrate it to a PWA app so that it could be downloadable in smratphones.
-                        This app plays cool music that anybody can enjoy and have a good time(just chilling out). 
+                    </p>
+
+                    <p>    
+                        This app plays cool music that anybody at anytime can enjoy and have a good time(chill out). 
                         I made this app to play my favourite songs continuously(repeat) without showing any adds or whatever.
                     </p>
                 </div>
                  
                 </section>
-                <section>
-                   
+                <section className="bio-data">
+                   <h1>Hi, I am Sujoy</h1>
+                   <p></p>
                 </section>
             
         </div>
