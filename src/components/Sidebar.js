@@ -89,10 +89,7 @@ import { MusicContext } from '../context/musicContext';
                    
             <section className="section">
                 <div>
-                    <h3>About</h3>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
+                    <h3>About Us</h3>
                 </div>
             </section>
 

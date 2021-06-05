@@ -181,7 +181,9 @@ export default function Player({
     return (
         <div className="player__area">
             <div className="player">
-                <h1>Playing - {currentSong.name}</h1>
+                <div className="player-song-name">
+                    <h1>Playing - {currentSong.name}</h1>
+                </div>
                 <div className="play-control">
                     <CustomTooltip title="Shuffle" arrow placement="bottom">
                         <Button className={classes.button}>

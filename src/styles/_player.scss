@@ -31,7 +31,15 @@ $OleoScript: 'Oleo Script', cursive;
     align-items: center;
     justify-content: space-evenly;
     background-color: #E63946;
+}
 
+.player-song-name {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
     h1 {
         padding-bottom: 10px;
         color: $PlayerColor;
