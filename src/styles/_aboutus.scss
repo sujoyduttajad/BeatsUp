@@ -28,8 +28,9 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     position: absolute;
     top: 70rem;
     left: 6rem;
-    max-width: 70vw;
+    max-width: 60vw;
     width: 100%;
+    margin-right: 6em;
 
     h1 {
         color: #202020;
@@ -37,9 +38,17 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     }
     h2 {
         font-size: 4rem;
+        color: #363636;
     }
     p {
         font-size: 2rem;
+        color: #363636;
+    }
+    .content {
+        color: #202020;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+
     }
 
 }
@@ -49,12 +58,15 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     width: 100%;
     position: absolute;
     top: 70rem;
-    right: 6rem;
+    right: 3rem;
 
     img {
         width: 80%;
         height: 80%;
         // border-radius: 20px;
+        box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
     }
 }
 

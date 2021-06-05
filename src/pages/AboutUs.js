@@ -56,6 +56,11 @@ const AboutUs = () => {
                         <h1>Hi,</h1> 
                         <h2>I am Sujoy Dutta</h2>
                         <p>Frontend Developer</p>
+                        <p className="content">I have 3 years of experience in UI having stacks like React.js, Next.js, Redux, Node, 
+                            SASS, JavaScript, HTML5, CSS3, Bootstrap</p>
+                        <p className="content">I am still learning UX design but much inclined towards UI design.
+                            This app is all designed by me(super proud).</p>
+                        <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>        
                    </div>
                    <div className="bioData-profile">
                        <img src={Profile} alt="profile-pic" />
