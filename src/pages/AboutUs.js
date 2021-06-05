@@ -3,7 +3,7 @@ import Lottie from 'react-lottie';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import walkMan from '../lotties/lf30_editor_rmlzmksb.json'
-import circle from '../images/Ellipse7.svg'
+import Profile from '../images/Profile-pic.JPG'
 
 const AboutUs = () => {
 
@@ -56,6 +56,9 @@ const AboutUs = () => {
                         <h1>Hi,</h1> 
                         <h2>I am Sujoy Dutta</h2>
                         <p>Frontend Developer</p>
+                   </div>
+                   <div className="bioData-profile">
+                       <img src={Profile} alt="profile-pic" />
                    </div>
                 </section>
             

@@ -22,13 +22,15 @@ $LexenDeca: 'Lexend Deca', sans-serif;
 .bioData-container {
     @include flex(row, space-between, center);
     background-color: #EE6C4D;
-    
-    
 }
+
 .bioData-intro {
     position: absolute;
     top: 70rem;
     left: 6rem;
+    max-width: 70vw;
+    width: 100%;
+
     h1 {
         color: #202020;
         font-size: 8rem;
@@ -40,6 +42,20 @@ $LexenDeca: 'Lexend Deca', sans-serif;
         font-size: 2rem;
     }
 
+}
+
+.bioData-profile {
+    max-width: 30vw;
+    width: 100%;
+    position: absolute;
+    top: 70rem;
+    right: 6rem;
+
+    img {
+        width: 80%;
+        height: 80%;
+        // border-radius: 20px;
+    }
 }
 
 .about {
