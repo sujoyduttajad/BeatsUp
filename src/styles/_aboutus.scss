@@ -63,10 +63,9 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     img {
         width: 80%;
         height: 80%;
-        // border-radius: 20px;
         box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
     }
 }
 
