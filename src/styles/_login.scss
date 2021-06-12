@@ -207,7 +207,7 @@ hr {
     }
 
     &:hover {
-        transform: translate3d(0px, -2px, -4px) scale(1.15);
+        transform: translate3d(0px, -2px, -4px) scale(1.12);
         transform-style: preserve-3d;
         box-shadow: $ShadowColor 1px 1px 4px 0px, $ShadowColor 0px 1px 6px 1.5px;
         transition: all 0.2s ease-in-out;
