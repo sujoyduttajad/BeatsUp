@@ -4,6 +4,13 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import walkMan from '../lotties/lf30_editor_rmlzmksb.json'
 import Profile from '../images/Profile-pic.JPG'
+import ReactIcon from '../images/React.js.svg'
+import ReduxIcon from '../images/Redux.svg'
+import NextIcon from '../images/Next.js.svg'
+import SassIcon from '../images/Sass.svg'
+import NodeIcon from '../images/Node.js.svg'
+import FigmaIcon from '../images/Figma.svg'
+import GithubIcon from '../images/Github.svg'
 
 const AboutUs = () => {
 
@@ -61,8 +68,14 @@ const AboutUs = () => {
                         <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>    
 
                         <p>Skills</p>    
-                        <div>
-                            
+                        <div className="skills-container">
+                            <img src={ReactIcon} alt="React Icon" />
+                            <img src={ReduxIcon} alt="Redux Icon" />
+                            <img src={NodeIcon} alt="Node Icon" />
+                            <img src={SassIcon} alt="Sass Icon" />
+                            <img src={NextIcon} alt="Next Icon" />
+                            <img src={FigmaIcon} alt="Figma Icon" />
+                            <img src={GithubIcon} alt="Github Icon" />
                         </div>
                    </div>
                    <div className="bioData-profile">
