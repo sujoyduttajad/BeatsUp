@@ -32,6 +32,11 @@ $Orange: #EE6C4D;
     p {
         color: darkgrey;
     }
+    &:hover {
+        transform: translateX(-17%);
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 .sidebar__container {
