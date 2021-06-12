@@ -92,21 +92,22 @@ const AboutUs = () => {
                         <form className="contactus__form">
                         <div className="contactus__input">
                             <label>Firstname</label>                                                     
-                            <input className="contactus__username" type='text' />                           
+                            <input className="contactus__username" type='text' placeholder="John" />                           
                         </div>
                         <div className="contactus__input">
                             <label>Lastname</label>                                                     
-                            <input className="contactus__username" type='text' />                           
+                            <input className="contactus__username" type='text' placeholder="Doe" />                           
                         </div>
                         <div className="contactus__input">
                             <label>Email</label>                                                     
-                            <input className="contactus__username" type='email' />                           
+                            <input className="contactus__username" type='email' placeholder="john.doe@example.com" />                           
                         </div>
-                        <div>
-                        <textarea 
-                                className="textarea"
-                                placeholder="Type something if you want">
-                        </textarea>
+                        <div className="contactus__input">
+                            <label>Message</label>  
+                            <textarea 
+                                    className="textarea"
+                                    placeholder="Type something if you want">
+                            </textarea>
                         </div>
                         
                         <div>
@@ -115,9 +116,6 @@ const AboutUs = () => {
                     </form>
                                
                    </div>
-                   {/* <div className="contactus-profile">
-                       <img src={Profile} alt="profile-pic" />
-                   </div> */}
                 </section>
             
         </div>

@@ -112,7 +112,7 @@ $BurnSienna: #EE6C4D;
     margin-bottom: 0.5rem;
     
     label {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 1.2px;
         font-weight: 500;
         margin-bottom: 0;
@@ -124,6 +124,7 @@ $BurnSienna: #EE6C4D;
 .contactus__username {
     border-radius: 6px;
     background: white;
+    background-color: rgba(216, 215, 213, 0.2);
     width: 25rem;
     border: 0;
     font-size: 1em;
@@ -137,8 +138,7 @@ $BurnSienna: #EE6C4D;
     height: 10rem;
     padding: .8em;
     margin-bottom: 0.8em;
-    margin-top: 1rem;
-    // margin-left: 1rem;
+    margin-top: 5px;
     background-color: rgba(216, 215, 213, 0.2);
     border-radius: 10px;
     border: 0;
