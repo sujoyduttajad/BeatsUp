@@ -9,6 +9,7 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     align-items: $align;
     justify-content: $justify;
 }
+
 .about-container, .bioData-container {
     @include flex(row, space-between, center);
     background-color: #202020;
@@ -48,9 +49,7 @@ $LexenDeca: 'Lexend Deca', sans-serif;
         color: #202020;
         margin-bottom: 1rem;
         font-size: 1.5rem;
-
     }
-
 }
 
 .bioData-profile {
@@ -90,6 +89,7 @@ $LexenDeca: 'Lexend Deca', sans-serif;
         margin-bottom: 1.5rem;
     }
 }
+
 .animation-container {   
     background-image: url(../images/Ellipse7.svg);
     background-position: 30% -11%;
