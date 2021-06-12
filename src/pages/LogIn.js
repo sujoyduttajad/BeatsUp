@@ -55,11 +55,11 @@ const LogIn = () => {
                     <form className="login__form">
                         <div>
                             <label>Username</label>                                                     
-                            <input className="username" type='email' />                           
+                            <input className="username" type='email' placeholder="john.doe@example.com" />                           
                         </div>
                         <div>
                             <label>Password</label>
-                            <input className="password" type='password' />
+                            <input className="password" type='password' placeholder="must be 8 characters"  />
                             <p><a href="#"> Forgot password?</a></p>
                         </div>
 

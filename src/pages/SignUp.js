@@ -50,19 +50,19 @@ const SignUp = () => {
                     <form className="signup__form">
                         <div className="signup__input">
                             <label>Firstname</label>                                                     
-                            <input className="username" type='text' />                           
+                            <input className="username" type='text' placeholder="John" />                           
                         </div>
                         <div className="signup__input">
                             <label>Lastname</label>                                                     
-                            <input className="username" type='text' />                           
+                            <input className="username" type='text' placeholder="Doe" />                           
                         </div>
                         <div className="signup__input">
                             <label>Email</label>                                                     
-                            <input className="username" type='email' />                           
+                            <input className="username" type='email' placeholder="john.doe@example.com" />                           
                         </div>
                         <div className="signup__input">
                             <label>Password</label>
-                            <input className="password" type='password' />
+                            <input className="password" type='password' placeholder="must be 8 characters" />
                         </div>
                         <div className="checkbox">
                             <Checkbox
