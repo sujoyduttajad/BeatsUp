@@ -22,7 +22,7 @@ nav {
     justify-content: center;
     background-color: $BlackBackground;
     vertical-align: middle;
-    margin: 0.6em;
+    margin: 0.1rem 0.6em;
     margin-right: 0rem;
     transition: all 0.5s ease;
     margin-left: 0;
@@ -32,8 +32,8 @@ nav {
         color: $MainOrange;
     }
     img {
-        width: 5rem;
-        height: 4.2rem;
+        width: 4rem;
+        height: 4rem;
         color: $MainOrange;
     }
 }
@@ -46,8 +46,6 @@ nav {
 .header__h1 {
     padding-top: 9px;
     color: $MainOrange;
-    // font-family: 'Comfortaa', cursive;
-    font-family: 'Padauk', sans-serif;
     font-family: $LexenDeca;
     padding-left: 18px;
     margin-left: 0;
