@@ -83,21 +83,42 @@ const AboutUs = () => {
                    </div>
                 </section>
 
-                {/* <section className="bioData-container">
-                    <div className="bioData-intro">
-                        <h1>Hi,</h1> 
-                        <h2>I am Sujoy Dutta</h2>
-                        <p>Frontend Developer</p>
-                        <p className="content">I have 3 years of experience in UI with a tech-stack of React.js, Next.js, Redux, Node, 
-                            SASS, JavaScript, HTML5, CSS3, Bootstrap</p>
-                        <p className="content">I am still learning UX design but much inclined towards UI design.
-                            This app is all designed by me(super proud).</p>
-                        <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>        
+                <section className="contactus-container">
+                    <div className="contactus-intro">
+                        <h1>Get in Touch</h1> 
+                        <p>Have any inquiry or feedback for us?</p>
+                        <p>Contact us directly or fill out the form and we will get</p> 
+                        <p> back to you promptly</p>
+                        <form className="contactus__form">
+                        <div className="contactus__input">
+                            <label>Firstname</label>                                                     
+                            <input className="contactus__username" type='text' />                           
+                        </div>
+                        <div className="contactus__input">
+                            <label>Lastname</label>                                                     
+                            <input className="contactus__username" type='text' />                           
+                        </div>
+                        <div className="contactus__input">
+                            <label>Email</label>                                                     
+                            <input className="contactus__username" type='email' />                           
+                        </div>
+                        <div>
+                        <textarea 
+                                className="textarea"
+                                placeholder="Type something if you want">
+                        </textarea>
+                        </div>
+                        
+                        <div>
+                            <button className="form__button">Send Message</button>     
+                        </div>
+                    </form>
+                               
                    </div>
-                   <div className="bioData-profile">
+                   {/* <div className="contactus-profile">
                        <img src={Profile} alt="profile-pic" />
-                   </div>
-                </section> */}
+                   </div> */}
+                </section>
             
         </div>
     )
