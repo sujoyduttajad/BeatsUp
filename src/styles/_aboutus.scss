@@ -58,6 +58,7 @@ $LexenDeca: 'Lexend Deca', sans-serif;
     position: absolute;
     top: 70rem;
     right: 3rem;
+   
 
     img {
         width: 80%;
@@ -65,6 +66,15 @@ $LexenDeca: 'Lexend Deca', sans-serif;
         box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
         -moz-box-shadow: 10px 10px 5px 0px rgba(32, 32, 32,0.75);
+        transform: translate(0px, 0px);
+        transition: 0.5s ease-in-out;
+    
+        &:hover {
+            transform: translate(5px, 5px);
+            transition: 0.5s ease-in-out;
+            box-shadow: none;
+        }
+        
     }
 }
 

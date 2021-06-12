@@ -49,6 +49,36 @@ const CustomTooltip = withStyles((theme) => ({
     },
 }))(Tooltip);
 
+const PrettoSlider = withStyles({
+    root: {
+      color: '#52af77',
+      height: 8,
+    },
+    thumb: {
+      height: 24,
+      width: 24,
+      backgroundColor: '#fff',
+      border: '2px solid currentColor',
+      marginTop: -8,
+      marginLeft: -12,
+      '&:focus, &:hover, &$active': {
+        boxShadow: 'inherit',
+      },
+    },
+    active: {},
+    valueLabel: {
+      left: 'calc(-50% + 4px)',
+    },
+    track: {
+      height: 8,
+      borderRadius: 4,
+    },
+    rail: {
+      height: 8,
+      borderRadius: 4,
+    },
+  })(Slider);
+
 
 export default function Player({ 
     audioRef, 
@@ -175,7 +205,8 @@ export default function Player({
     }
     // Add the styles
     const trackAnimation = {
-        transform: `translateX(${songInfo.animationPercentage}%)`
+        transform: `translateX(${songInfo.animationPercentage}%)`,
+        transition: `all 0.001s ease-in`
     }
     
     return (
@@ -261,6 +292,15 @@ export default function Player({
                             value={songInfo.currentTime}
                             onChange={dragHandler} 
                         />
+                        {/* <PrettoSlider 
+                            valueLabelDisplay="auto" 
+                            aria-label="pretto slider" 
+                            defaultValue={0} 
+                            min={0}
+                            max={songInfo.duration || 0}
+                            value={songInfo.currentTime}
+                            onChange={dragHandler} 
+                        /> */}
                         <div style={trackAnimation} className="animate-track"></div>
                     </div>    
                     <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>

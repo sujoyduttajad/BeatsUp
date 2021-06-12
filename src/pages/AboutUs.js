@@ -29,14 +29,12 @@ const AboutUs = () => {
             <aside><Sidebar /></aside>
                 <section className="about-container">
                     <div className="animation-container">
-                        {/* <img src={circle} alt="circle" /> */}
                         <Lottie 
                             className="man"
                             options={defaultOptions}
                             height={820}
                             width={560}
                         />
-                        
                     </div>
                 <div className="about">
                     <h1>About Us</h1>
