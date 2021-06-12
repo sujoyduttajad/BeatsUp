@@ -148,16 +148,6 @@ const useStyles = makeStyles((theme) => ({
                         </div>
                     </NavLink>
 
-                    {/* <div>
-                        <button class="btn-about btn-3 btn-3d">
-                            <FontAwesomeIcon 
-                                className={`header__home `} 
-                                size="2x" 
-                                icon={faSmile} 
-                            />
-                            <span>About</span>
-                        </button>
-                    </div> */}
                     <div>
                         <button className="btn-settings btn-3 btn-3d">
                             <FontAwesomeIcon 
@@ -175,7 +165,7 @@ const useStyles = makeStyles((theme) => ({
                                 size="2x" 
                                 icon={faBell} 
                             />
-                            {/* <span>Settings</span> */}
+                            
                         </button>
                     </div>
 

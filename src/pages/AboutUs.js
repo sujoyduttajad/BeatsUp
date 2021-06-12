@@ -11,9 +11,10 @@ import SassIcon from '../images/Sass2.svg'
 import NodeIcon from '../images/Node.js.svg'
 import FigmaIcon from '../images/Figma.svg'
 import GithubIcon from '../images/Github.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs = () => {
-
 
     const defaultOptions = {
         loop: true,
@@ -111,7 +112,14 @@ const AboutUs = () => {
                         </div>
                         
                         <div>
-                            <button className="contactus__button">Send Message</button>     
+                            <button className="contactus__button">
+                                Send Message
+                                <FontAwesomeIcon 
+                                    className="send__icon" 
+                                    size="1x" 
+                                    icon={faPaperPlane} 
+                                />
+                            </button>     
                         </div>
                     </form>
                                
