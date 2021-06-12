@@ -47,9 +47,30 @@ const AboutUs = () => {
                         I made this app to play my favourite songs continuously(repeat) without showing any adds or whatever.
                     </p>
                 </div>
-                 
                 </section>
+
                 <section className="bioData-container">
+                    <div className="bioData-intro">
+                        <h1>Hi,</h1> 
+                        <h2>I am Sujoy Dutta</h2>
+                        <p>Frontend Developer</p>
+                        <p className="content">I have 3 years of experience in UI with a tech-stack of React.js, Next.js, Redux, Node, 
+                            SASS, JavaScript, HTML5, CSS3, Bootstrap</p>
+                        <p className="content">I am still learning UX design but much inclined towards UI design.
+                            This app is all designed by me(super proud).</p>
+                        <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>    
+
+                        <p>Skills</p>    
+                        <div>
+                            
+                        </div>
+                   </div>
+                   <div className="bioData-profile">
+                       <img src={Profile} alt="profile-pic" />
+                   </div>
+                </section>
+
+                {/* <section className="bioData-container">
                     <div className="bioData-intro">
                         <h1>Hi,</h1> 
                         <h2>I am Sujoy Dutta</h2>
@@ -63,7 +84,7 @@ const AboutUs = () => {
                    <div className="bioData-profile">
                        <img src={Profile} alt="profile-pic" />
                    </div>
-                </section>
+                </section> */}
             
         </div>
     )
