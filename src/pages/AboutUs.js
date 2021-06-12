@@ -86,9 +86,9 @@ const AboutUs = () => {
                 <section className="contactus-container">
                     <div className="contactus-intro">
                         <h1>Get in Touch</h1> 
-                        <p>Have any inquiry or feedback for us?</p>
-                        <p>Contact us directly or fill out the form and we will get</p> 
-                        <p> back to you promptly</p>
+                        <p>Have any inquiry or feedback for us?
+                        Contact us directly or fill out the form and we will get 
+                         back to you promptly</p>
                         <form className="contactus__form">
                         <div className="contactus__input">
                             <label>Firstname</label>                                                     
@@ -110,7 +110,7 @@ const AboutUs = () => {
                         </div>
                         
                         <div>
-                            <button className="form__button">Send Message</button>     
+                            <button className="contactus__button">Send Message</button>     
                         </div>
                     </form>
                                
