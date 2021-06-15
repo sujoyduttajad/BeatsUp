@@ -185,18 +185,22 @@ const AboutUs = () => {
                             <p>contactus@inveritasoft.com</p>
                         </div>
                         </div>
-                        <div>
+                        <div className="contactus-terms-conditions">
                             <button className="contactus-social-media">
                                 <img src={facebook} alt="Facebbok" />
+                                <p>Join us on Facebook</p>
                             </button>
                             <button className="contactus-social-media">
                                 <img src={twitter} alt="Twitter" />
+                                <p>Join us on Twitter</p>
                             </button>
                             <button className="contactus-social-media">
-                                <img src={instagram} alt="Google" />
+                                <img src={instagram} alt="Instagram" />
+                                <p>Join us on Instagram</p>
                             </button>
                             <button className="contactus-social-media-git">
                                 <img src={GithubIcon} alt="Github Icon" />
+                                <p>My Github account</p>
                             </button>
                         </div>
                         <div className="contactus-terms-conditions">
