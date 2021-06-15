@@ -226,15 +226,19 @@ $BurnSienna: #EE6C4D;
 
 .banner-strip {
     width: 28vw;
-    height: 80vh;
+    height: 60vh;
     color: $BurnSienna;
     border-radius: 0.1rem;
     border: 0;
     
     @include flex(column, space-between, flex-start);
 
+    .contact-info-container {
+        @include flex(column, center, flex-start);
+    }
+
     .contact-info {
-        @include flex(row, space-between, center);
+        @include flex(row, space-evenly, center);
 
         margin-bottom: 20px;
         margin-left: 10px;

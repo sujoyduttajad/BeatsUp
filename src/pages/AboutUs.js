@@ -159,7 +159,7 @@ const AboutUs = () => {
                             />
                             <img src={logo} alt="logo" />
                         </div> 
-                        
+                        <div className="contact-info-container">
                         <div className="contact-info">
                             <FontAwesomeIcon 
                                 className="send__icon" 
@@ -184,6 +184,7 @@ const AboutUs = () => {
                             />
                             <p>contactus@inveritasoft.com</p>
                         </div>
+                        </div>
                         <div>
                             <button className="contactus-social-media">
                                 <img src={facebook} alt="Facebbok" />
@@ -204,7 +205,7 @@ const AboutUs = () => {
                             <p><a href="#">Cookie Policy</a></p>
                             <p><a href="#">Ads info</a></p>
                             <p><a href="#">More</a></p>
-                            <p><a href="#">© 2021 Twitter, Inc.</a></p>
+                            <p><a href="#">© 2021 BeatsUp, Inc.</a></p>
                         </div>
                    </div>
                    {/* ############     Mail Animation     ############ */}
