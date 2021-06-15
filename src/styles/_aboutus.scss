@@ -93,11 +93,19 @@ $BurnSienna: #EE6C4D;
     @include flex(column, center, flex-start);
     width: 60vw;
     color: $BurnSienna;
-    margin-top: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
     margin-left: 2rem;
+    padding-left: 4.6rem;
+    padding-top: 3rem;
+    background-image: url(../images/RightSection.svg);
+    background-position: 0% 35%;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: 35rem 45rem;
 
     h1 {
-        color: $BurnSienna;
+        color: $ShadowColor;
     }
     p {
         width: 25rem;
@@ -119,13 +127,13 @@ $BurnSienna: #EE6C4D;
         font-weight: 500;
         margin-bottom: 0;
         margin-top: 6px;
-        color: $BurnSienna;
+        color: $primaryBlack;
     }
 }
 
 .contactus__username {
     border-radius: 6px;
-    background-color: rgba(216, 215, 213, 0.2);
+    background-color: rgb(66, 66, 66);
     color: #fefefe;
     width: 25rem;
     border: 0;
@@ -141,7 +149,7 @@ $BurnSienna: #EE6C4D;
     padding: .8em;
     margin-bottom: 0.8em;
     margin-top: 5px;
-    background-color: rgba(216, 215, 213, 0.2);
+    background-color: rgb(66, 66, 66);
     color: #fefefe;
     border-radius: 10px;
     border: 0;

@@ -62,6 +62,7 @@ const AboutUs = () => {
         <div>
             <Header />
             <aside><Sidebar /></aside>
+            {/* ###########      About-Us container    ############### */}
                 <section className="about-container">
                     <div className="animation-container">
                         <Lottie 
@@ -83,8 +84,8 @@ const AboutUs = () => {
                     </p>
                 </div>
                 </section>
-
-                <section className="bioData-container">
+        {/* ###########      Bio-data container    ############### */}
+                <section className="bioData-container"> 
                     <div className="bioData-intro">
                         <h1>Hi,</h1> 
                         <h2>I am Sujoy Dutta</h2>
@@ -110,7 +111,7 @@ const AboutUs = () => {
                        <img src={Profile} alt="profile-pic" />
                    </div>
                 </section>
-
+        {/* ###########      Contact-Us Form container    ############### */}
                 <section className="contactus-container">
                     <div className="contactus-intro">
                         <h1>Get in Touch</h1> 
@@ -213,10 +214,10 @@ const AboutUs = () => {
                         </div>
                    </div>
                    {/* ############     Mail Animation     ############ */}
-                   <div>
+                   <div className="mail-animation">
                         <Lottie 
                             options={contactUsOptions}
-                            height={820}
+                            height={720}
                             width={820}
                         />
                     </div>
