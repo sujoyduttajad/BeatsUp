@@ -226,22 +226,18 @@ $BurnSienna: #EE6C4D;
 
 .banner-strip {
     width: 28vw;
-    height: 20vh;
+    height: 80vh;
     color: $BurnSienna;
     border-radius: 0.1rem;
     border: 0;
     
-    @include flex(column, bottom, flex-start);
+    @include flex(column, space-between, flex-start);
 
-    div {
+    .contact-info {
         @include flex(row, space-between, center);
 
         margin-bottom: 20px;
         margin-left: 10px;
-    }
-
-    &:first-of-type(div) {
-        margin-top: 5rem;
     }
 
     p {
@@ -268,7 +264,6 @@ $BurnSienna: #EE6C4D;
     }
 }
 .contactus-social-media-git {
-    // background-color: #fefefe;
 
     img {
         width: 2.5rem;
@@ -280,11 +275,16 @@ $BurnSienna: #EE6C4D;
 }
 
 .banner__logo__container {
-    margin-bottom: 40rem;
+    @include flex(row, space-between, center);
     
     img {
         width: 12.5rem;
         height: 5.5rem;
     }
+
+}
+
+.contactus-terms-conditions {
+    @include flex(column, center, flex-start);
 
 }

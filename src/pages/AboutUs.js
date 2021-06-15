@@ -151,15 +151,16 @@ const AboutUs = () => {
                     </form>       
                    </div>
                    <div className='banner-strip'>
-                   <div className="banner__logo__container">
-                        <Lottie 
-                            options={logoOptions}
-                            height={60}
-                            width={60}
-                        />
-                        <img src={logo} alt="logo" />
-                    </div> 
-                        <div>
+                        <div className="banner__logo__container">
+                            <Lottie 
+                                options={logoOptions}
+                                height={60}
+                                width={60}
+                            />
+                            <img src={logo} alt="logo" />
+                        </div> 
+                        
+                        <div className="contact-info">
                             <FontAwesomeIcon 
                                 className="send__icon" 
                                 size="1x" 
@@ -167,7 +168,7 @@ const AboutUs = () => {
                             />
                             <p>151 New Park Ave, Hartford, CT 06106, United States</p>
                         </div>
-                        <div>
+                        <div className="contact-info">
                             <FontAwesomeIcon 
                                 className="send__icon" 
                                 size="1x" 
@@ -175,7 +176,7 @@ const AboutUs = () => {
                             />
                             <p>+1(203) 302-9545</p>
                         </div>
-                        <div>
+                        <div className="contact-info">
                             <FontAwesomeIcon 
                                 className="send__icon" 
                                 size="1x" 
@@ -197,6 +198,14 @@ const AboutUs = () => {
                                 <img src={GithubIcon} alt="Github Icon" />
                             </button>
                         </div>
+                        <div className="contactus-terms-conditions">
+                            <p><a href="#">Terms of Service</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Cookie Policy</a></p>
+                            <p><a href="#">Ads info</a></p>
+                            <p><a href="#">More</a></p>
+                            <p><a href="#">© 2021 Twitter, Inc.</a></p>
+                        </div>
                    </div>
                    {/* ############     Mail Animation     ############ */}
                    <div>
@@ -206,10 +215,6 @@ const AboutUs = () => {
                             width={820}
                         />
                     </div>
-
-                    {/* <div>
-
-                    </div> */}
                 </section>
             
         </div>
