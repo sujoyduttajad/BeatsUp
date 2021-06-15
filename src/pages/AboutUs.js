@@ -15,7 +15,7 @@ import NodeIcon from '../images/Node.js.svg'
 import FigmaIcon from '../images/Figma.svg'
 import GithubIcon from '../images/Github.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMapMarked, faMapMarker, faPaperPlane, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs = () => {
 
@@ -137,9 +137,30 @@ const AboutUs = () => {
                     </form>       
                    </div>
                    <div className='banner-strip'>
-                        <div><p>151 New Park Ave, Hartford, CT 06106, United States</p></div>
-                        <div><p>+1(203) 302-9545</p></div>
-                        <div><p>contactus@inveritasoft.com</p></div>
+                        <div>
+                            <FontAwesomeIcon 
+                                className="send__icon" 
+                                size="1x" 
+                                icon={faMapMarker} 
+                            />
+                            <p>151 New Park Ave, Hartford, CT 06106, United States</p>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon 
+                                className="send__icon" 
+                                size="1x" 
+                                icon={faPhoneAlt} 
+                            />
+                            <p>+1(203) 302-9545</p>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon 
+                                className="send__icon" 
+                                size="1x" 
+                                icon={faEnvelope} 
+                            />
+                            <p>contactus@inveritasoft.com</p>
+                        </div>
                    </div>
                    <div className="">
                         <Lottie 

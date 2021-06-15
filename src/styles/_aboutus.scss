@@ -224,11 +224,21 @@ $BurnSienna: #EE6C4D;
 
 .banner-strip {
     width: 25vw;
-    height: 90vh;
+    height: 60vh;
     background-color: $BurnSienna;
+    border-radius: 0.1rem;
+    border: 0;
+    
     @include flex(column, center, flex-start);
+
+    div {
+        @include flex(row, space-between, center);
+
+        margin-bottom: 20px;
+    }
 
     p {
         font-size: 0.9rem;
+        margin-left: 10px;
     }
 }
