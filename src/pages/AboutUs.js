@@ -2,7 +2,10 @@ import React from 'react'
 import Lottie from 'react-lottie';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+
 import walkMan from '../lotties/lf30_editor_rmlzmksb.json'
+import contactUs from '../lotties/lf30_editor_xbdpgq8f.json'
+
 import Profile from '../images/Profile-pic.JPG'
 import ReactIcon from '../images/React.js.svg'
 import ReduxIcon from '../images/Redux.svg'
@@ -30,6 +33,16 @@ const AboutUs = () => {
           }
         }
       };
+
+    const contactUsOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: contactUs,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+          }
+        
+    }  
 
     return (
         <div>
@@ -124,6 +137,14 @@ const AboutUs = () => {
                     </form>
                                
                    </div>
+                   <div className="">
+                        <Lottie 
+                            className="con"
+                            options={contactUsOptions}
+                            height={820}
+                            width={820}
+                        />
+                    </div>
                 </section>
             
         </div>
