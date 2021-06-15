@@ -134,12 +134,15 @@ const AboutUs = () => {
                                 />
                             </button>     
                         </div>
-                    </form>
-                               
+                    </form>       
+                   </div>
+                   <div className='banner-strip'>
+                        <div><p>151 New Park Ave, Hartford, CT 06106, United States</p></div>
+                        <div><p>+1(203) 302-9545</p></div>
+                        <div><p>contactus@inveritasoft.com</p></div>
                    </div>
                    <div className="">
                         <Lottie 
-                            className="con"
                             options={contactUsOptions}
                             height={820}
                             width={820}
