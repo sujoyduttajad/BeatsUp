@@ -5,7 +5,12 @@ import Sidebar from '../components/Sidebar';
 
 import walkMan from '../lotties/lf30_editor_rmlzmksb.json'
 import contactUs from '../lotties/lf30_editor_xbdpgq8f.json'
+import logoAnime from '../lotties/animation_koh3fmq3.json'
 
+import logo from "../images/BrandName.svg";
+import instagram from '../images/instagram.svg'
+import twitter from '../images/twitter-brands 1.svg'
+import facebook from '../images/Facebook Light.svg'
 import Profile from '../images/Profile-pic.JPG'
 import ReactIcon from '../images/React.js.svg'
 import ReduxIcon from '../images/Redux.svg'
@@ -43,6 +48,15 @@ const AboutUs = () => {
           }
         
     }  
+
+    const logoOptions = {
+        loop: false,
+        autoplay: true,
+        animationData: logoAnime,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+    }
+    };
 
     return (
         <div>
@@ -137,6 +151,14 @@ const AboutUs = () => {
                     </form>       
                    </div>
                    <div className='banner-strip'>
+                   <div className="banner__logo__container">
+                        <Lottie 
+                            options={logoOptions}
+                            height={60}
+                            width={60}
+                        />
+                        <img src={logo} alt="logo" />
+                    </div> 
                         <div>
                             <FontAwesomeIcon 
                                 className="send__icon" 
@@ -161,14 +183,33 @@ const AboutUs = () => {
                             />
                             <p>contactus@inveritasoft.com</p>
                         </div>
+                        <div>
+                            <button className="contactus-social-media">
+                                <img src={facebook} alt="Facebbok" />
+                            </button>
+                            <button className="contactus-social-media">
+                                <img src={twitter} alt="Twitter" />
+                            </button>
+                            <button className="contactus-social-media">
+                                <img src={instagram} alt="Google" />
+                            </button>
+                            <button className="contactus-social-media-git">
+                                <img src={GithubIcon} alt="Github Icon" />
+                            </button>
+                        </div>
                    </div>
-                   <div className="">
+                   {/* ############     Mail Animation     ############ */}
+                   <div>
                         <Lottie 
                             options={contactUsOptions}
                             height={820}
                             width={820}
                         />
                     </div>
+
+                    {/* <div>
+
+                    </div> */}
                 </section>
             
         </div>
