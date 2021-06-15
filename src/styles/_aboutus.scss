@@ -90,10 +90,12 @@ $BurnSienna: #EE6C4D;
 }
 
 .contactus-intro {
-    @include flex(column, center, center);
+    @include flex(column, center, flex-start);
     width: 60vw;
     color: $BurnSienna;
     margin-top: 6rem;
+    margin-left: 2rem;
+
     h1 {
         color: $BurnSienna;
     }
@@ -223,18 +225,21 @@ $BurnSienna: #EE6C4D;
 }
 
 .banner-strip {
-    width: 25vw;
-    height: 60vh;
-    background-color: $BurnSienna;
+    width: 28vw;
+    height: 20vh;
+    // background-color: $BurnSienna;
+    color: $BurnSienna;
     border-radius: 0.1rem;
     border: 0;
+    padding-top: 12rem;
     
-    @include flex(column, center, flex-start);
+    @include flex(column, bottom, flex-start);
 
     div {
         @include flex(row, space-between, center);
 
         margin-bottom: 20px;
+        margin-left: 10px;
     }
 
     p {
