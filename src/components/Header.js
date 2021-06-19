@@ -63,7 +63,8 @@ const useStyles = makeStyles((theme) => ({
         // color: "#bfc0c0",
         color: "#EE6C4D",
         '&:hover': {
-            textDecoration: 'none'        
+            textDecoration: 'none',
+            backgroundColor: '#414242'        
         }
       },
       menu: {
