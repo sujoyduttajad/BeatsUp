@@ -260,9 +260,7 @@ $BurnSienna: #EE6C4D;
         margin-left: 10px;
     }
 }
-// .contactus-social-media {
-//     @include flex(column, center, flex-start);
-// }
+
 .contactus-social-media, .contactus-social-media-git {
     @include flex(row, flex-start, center);
     background-color: $BurnSienna;
