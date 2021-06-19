@@ -243,6 +243,9 @@ $BurnSienna: #EE6C4D;
 
     .contact-info-container {
         @include flex(column, center, flex-start);
+        &:hover {
+            filter: drop-shadow(0 0 2px $ShadowColor);
+        }
     }
 
     .contact-info {
@@ -257,38 +260,46 @@ $BurnSienna: #EE6C4D;
         margin-left: 10px;
     }
 }
-
+// .contactus-social-media {
+//     @include flex(column, center, flex-start);
+// }
 .contactus-social-media, .contactus-social-media-git {
     @include flex(row, flex-start, center);
-    background-color: transparent;
+    background-color: $BurnSienna;
     outline: 0;
     border: 0;
-    width: 100%;
+    width: 15rem;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+    &:hover {
+        box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
+        -webkit-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
+        -moz-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
+    }
+
+    p {
+        color: #000;
+    }
 
     img {
         width: 2rem;
         height: 2rem;
-        margin: 12px;
+        margin: 8px;
         margin-left: 10px;
-        filter: drop-shadow(0 0 2px $ShadowColor);
-
-        &:hover {
-            filter: drop-shadow(0 0 5px #FEF5F2);
-        }
     }
 }
 .contactus-social-media-git {
 
     p {
-        color: $BurnSienna;
+        color: $primaryBlack;
     }
 
     img {
         width: 2.5rem;
         height: 2.5rem;
-        margin-right: 10px;
-        margin-left: 7px;
-        filter: drop-shadow(0 0 2px $ShadowColor);
+        margin: 5px;
+        margin-left: 8px;
     }
 }
 

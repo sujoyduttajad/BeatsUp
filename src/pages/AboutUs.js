@@ -186,7 +186,7 @@ const AboutUs = () => {
                             <p>contactus@inveritasoft.com</p>
                         </div>
                         </div>
-                        <div className="contactus-terms-conditions">
+                        <div className="contact-info-container">
                             <button className="contactus-social-media">
                                 <img src={facebook} alt="Facebbok" />
                                 <p>Join us on Facebook</p>
