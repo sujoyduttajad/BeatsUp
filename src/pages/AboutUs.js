@@ -95,7 +95,7 @@ const AboutUs = () => {
                         <p>Frontend Developer</p>
                         <p className="content">I have 3 years of experience in UI with a tech-stack of React.js, Next.js, Redux, Node, 
                             SASS, JavaScript, HTML5, CSS3, Bootstrap</p>
-                        <p className="content">I am still learning UX design but much inclined towards UI design.
+                        <p className="content">I am still learning UX design but much inclined towards visual UI design.
                             This app is all designed by me(super proud).</p>
                         <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>    
 

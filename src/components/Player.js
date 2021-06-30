@@ -11,6 +11,8 @@ import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeMu
 const useStyles = makeStyles({
     button: {
       color: "#212529",
+    // boxShadow: "3px 3px 6px #212529, -3px -3px 6px #212529"
+    // boxShadow:  "2px 2px 10px #212529, -2px -2px 10px #212529"
     },
     root: {
         height: 190,

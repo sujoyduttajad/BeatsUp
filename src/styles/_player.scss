@@ -120,6 +120,8 @@ $OleoScript: 'Oleo Script', cursive;
 
 .play, .skip-back, .skip-forward, .repeat-song, .volume-icon {
     cursor: pointer;
+    filter: drop-shadow(5px 7px 4px rgba(33, 37, 41, 0.35));
+    
 }
 
 .volume-icon {

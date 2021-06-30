@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
     const classes = useStyles();
     const [open, setOpen] = useState(false);
-    const [modalopen, setModalOpen] = React.useState(false);
+    const [modalopen, setModalOpen] = useState(false);
 
     // const handleModalOpen = () => {
     //     setModalOpen(true);
