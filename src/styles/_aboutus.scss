@@ -243,9 +243,7 @@ $BurnSienna: #EE6C4D;
 
     .contact-info-container {
         @include flex(column, center, flex-start);
-        &:hover {
-            filter: drop-shadow(0 0 2px $ShadowColor);
-        }
+        
     }
 
     .contact-info {
@@ -271,6 +269,7 @@ $BurnSienna: #EE6C4D;
     margin-bottom: 10px;
 
     &:hover {
+        filter: drop-shadow(0 0 2px $ShadowColor);
         box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
         -webkit-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
         -moz-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
