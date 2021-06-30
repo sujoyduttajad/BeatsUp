@@ -8,6 +8,9 @@ import contactUs from '../lotties/lf30_editor_xbdpgq8f.json'
 import logoAnime from '../lotties/animation_koh3fmq3.json'
 
 import logo from "../images/BrandName.svg";
+import { TiSocialFacebookCircular, TiSocialTwitterCircular  } from 'react-icons/ti';
+import { VscGithub } from 'react-icons/vsc'
+import { SiInstagram } from 'react-icons/si'
 import instagram from '../images/instagram.svg'
 import twitter from '../images/twitter-brands 1.svg'
 import facebook from '../images/Facebook Light.svg'
@@ -188,19 +191,23 @@ const AboutUs = () => {
                         </div>
                         <div className="contact-info-container">
                             <button className="contactus-social-media">
-                                <img src={facebook} alt="Facebbok" />
+                                {/* <img src={facebook} alt="Facebbok" /> */}
+                                <TiSocialFacebookCircular color="#2A2B2A" size="3em" />
                                 <p>Join us on Facebook</p>
                             </button>
                             <button className="contactus-social-media">
-                                <img src={twitter} alt="Twitter" />
+                                {/* <img src={twitter} alt="Twitter" /> */}
+                                <TiSocialTwitterCircular color="#2A2B2A" size="3em" />
                                 <p>Join us on Twitter</p>
                             </button>
                             <button className="contactus-social-media">
-                                <img src={instagram} alt="Instagram" />
+                                {/* <img src={instagram} alt="Instagram" /> */}
+                                <SiInstagram color="#2A2B2A" className="instagram-icon" size="3em" />
                                 <p>Join us on Instagram</p>
                             </button>
                             <button className="contactus-social-media-git">
-                                <img src={GithubIcon} alt="Github Icon" />
+                                {/* <img src={GithubIcon} alt="Github Icon" /> */}
+                                <VscGithub color="#2A2B2A" className="github-icon" size="3em" />
                                 <p>My Github account</p>
                             </button>
                         </div>
