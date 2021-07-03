@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Ubuntu&display=swap');
 
-$Quicksand: 'Quicksand', sans-serif;
+$fontFamily: 'Lexend Deca', sans-serif;
 $primaryBlack: #181A19;
 $ShadowColor: #404340;
 
@@ -51,8 +51,7 @@ $ShadowColor: #404340;
     width: 32vw;
     height: 85vh;
     border-radius: 0 15px 15px 0;
-    // font-family: 'Asap', sans-serif;
-    font-family: $Quicksand;
+    font-family: $fontFamily;
     color: $primaryBlack;
     font-weight: 500;
 
@@ -112,10 +111,11 @@ $ShadowColor: #404340;
         
         label {
             font-size: 1.5rem;
-            letter-spacing: 1.9px;
-            font-weight: 600;
+            letter-spacing: 1.2px;
+            font-weight: 700;
             margin-bottom: 0;
             margin-top: 6px;
+            color: #212529;
         }
         p {
             margin-bottom: 0;

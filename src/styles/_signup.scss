@@ -6,7 +6,7 @@
 $primaryBlack: #181A19;
 $ShadowColor: #404340;
 $LexenDeca: 'Lexend Deca', sans-serif;
-$Quicksand: 'Quicksand', sans-serif;
+// $Quicksand: 'Quicksand', sans-serif;
 
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -39,7 +39,7 @@ $Quicksand: 'Quicksand', sans-serif;
     width: 32vw;
     height: 85vh;
     border-radius:  15px 0 0 15px;
-    font-family: $Quicksand;
+    font-family: $LexenDeca;
     color: $primaryBlack;
 
     @include flex(column, space-evenly, center);
@@ -51,7 +51,7 @@ $Quicksand: 'Quicksand', sans-serif;
         font-weight: 100;
         letter-spacing: 1.5px;
         font-size: 2.8rem;
-        font-family: 'Quicksand', sans-serif;
+        font-family: $LexenDeca;
         span {
             color: #181A19;
             font-size: 2rem;

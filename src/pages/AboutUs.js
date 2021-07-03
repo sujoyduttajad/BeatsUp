@@ -11,9 +11,6 @@ import logo from "../images/BrandName.svg";
 import { TiSocialFacebookCircular, TiSocialTwitterCircular  } from 'react-icons/ti';
 import { VscGithub } from 'react-icons/vsc'
 import { SiInstagram } from 'react-icons/si'
-import instagram from '../images/instagram.svg'
-import twitter from '../images/twitter-brands 1.svg'
-import facebook from '../images/Facebook Light.svg'
 import Profile from '../images/Profile-pic.JPG'
 import ReactIcon from '../images/React.js.svg'
 import ReduxIcon from '../images/Redux.svg'
@@ -164,30 +161,30 @@ const AboutUs = () => {
                             <img src={logo} alt="logo" />
                         </div> 
                         <div className="contact-info-container">
-                        <div className="contact-info">
-                            <FontAwesomeIcon 
-                                className="send__icon" 
-                                size="1x" 
-                                icon={faMapMarker} 
-                            />
-                            <p>151 New Park Ave, Hartford, CT 06106, United States</p>
-                        </div>
-                        <div className="contact-info">
-                            <FontAwesomeIcon 
-                                className="send__icon" 
-                                size="1x" 
-                                icon={faPhoneAlt} 
-                            />
-                            <p>+1(203) 302-9545</p>
-                        </div>
-                        <div className="contact-info">
-                            <FontAwesomeIcon 
-                                className="send__icon" 
-                                size="1x" 
-                                icon={faEnvelope} 
-                            />
-                            <p>contactus@inveritasoft.com</p>
-                        </div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon 
+                                    className="send__icon" 
+                                    size="1x" 
+                                    icon={faMapMarker} 
+                                />
+                                <p>151 New Park Ave, Hartford, CT 06106, United States</p>
+                            </div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon 
+                                    className="send__icon" 
+                                    size="1x" 
+                                    icon={faPhoneAlt} 
+                                />
+                                <p>+1(203) 302-9545</p>
+                            </div>
+                            <div className="contact-info">
+                                <FontAwesomeIcon 
+                                    className="send__icon" 
+                                    size="1x" 
+                                    icon={faEnvelope} 
+                                />
+                                <p>contactus@inveritasoft.com</p>
+                            </div>
                         </div>
                         <div className="contact-info-container">
                             <button className="contactus-social-media">
