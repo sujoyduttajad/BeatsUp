@@ -58,7 +58,7 @@ export default function Home() {
         if(isPlaying) audioRef.current.play();
       }
   }
-
+  console.log(audioRef);
   return (
 
   <>
@@ -105,6 +105,7 @@ export default function Home() {
                             ref={audioRef} 
                             src={currentSong.audio}
                             onEnded={songEndHandler}
+                            draggable={true}
                         ></audio>
                     </section>
                 </div>

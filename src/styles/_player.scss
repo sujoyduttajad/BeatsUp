@@ -99,6 +99,59 @@ $OleoScript: 'Oleo Script', cursive;
     height: 32vh;
 }
 
+
+
+.track {
+    width: 100%;
+    height: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    input[type="range"]:focus {
+        outline: none;
+    }
+    
+    input[type="range"]:hover {
+        opacity: 1;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        // appearance: none;
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+        z-index: 13000;
+        position: relative;
+        background-color: #fff;
+        top: -1px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        transition: 0.2s all ease-out;
+    }
+}
+
+.animate-track {
+    background: #d3d5d7;
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    pointer-events: none;
+    border: 0.4px solid #fff;
+    opacity: 0.7;
+}
+
+// ---------   Material UI ------------------
 .MuiSlider-root {
     color: $PlayerColor !important;
     display: flex !important;
@@ -129,52 +182,6 @@ $OleoScript: 'Oleo Script', cursive;
     padding-bottom: 4px;
 }
 
-input[type="range"]:focus {
-    outline: none;
-}
-
-input[type="range"]:hover {
-    opacity: 1;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    // -webkit-appearance: none;
-    // appearance: none;
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
-    // transition: 0.2s all ease-out;
-    z-index: 13000;
-    position: relative;
-    
-}
-
-input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    transition: 0.2s all ease-out;
-}
-
-.track {
-    width: 100%;
-    height: 0.7rem;
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.animate-track {
-    background: #d3d5d7;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(0%);
-    pointer-events: none;
-    border: 0.4px solid #d3d5d7;
-}
 
 // Mobile layout
 @media screen and (max-width: 540px) {
