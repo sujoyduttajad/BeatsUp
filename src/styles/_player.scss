@@ -20,6 +20,7 @@ $OleoScript: 'Oleo Script', cursive;
 .player__area {
     @include flex(row, space-evenly, center);
     max-height: 40vh;
+    height: 100%;
     margin: 3.5em;
     width: 100%;
     margin-left: 0;
@@ -224,6 +225,7 @@ $OleoScript: 'Oleo Script', cursive;
         @include flex(column, center, center);
         margin-top: 5rem;
         margin-bottom: 5rem;
+        height: 100%;
     }
     .player-song-name {
         h1 {
@@ -232,5 +234,8 @@ $OleoScript: 'Oleo Script', cursive;
     } 
     .volume-control {
         @include flex(column, center, center);
+    }
+    .player__area {
+        height: 70%;
     }
 }

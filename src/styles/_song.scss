@@ -3,8 +3,9 @@ $ShadowColor: #404340;
 
 
 .song__area {
-    height: 100%;
+    
     max-height: 40vh;
+    height: 100%;
     width: 100%;
     margin: 3.5em;
     margin-left: 0;
@@ -17,13 +18,14 @@ $ShadowColor: #404340;
 
 .song-container{
     display: flex;
-    height: 40vh;
-    width: 22vw;
-    // margin: 7.2%;
+    max-height: 40vh;
+    height: 100%;
+    max-width: 40vw;
+    width: 100%;
     padding: 2rem;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #333533;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
     
@@ -86,6 +88,10 @@ $ShadowColor: #404340;
 
 @media (min-width: 1920px) {
     .song__area {
-        margin-left: 42px;
+        height: 33.5vh;
+    }
+    .song-container {
+        height: 100%;
+        width: 100%;
     }
 }
