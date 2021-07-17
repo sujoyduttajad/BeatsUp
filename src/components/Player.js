@@ -11,8 +11,6 @@ import { faBackward, faForward, faPause, faPlay, faRandom, faSyncAlt, faVolumeMu
 const useStyles = makeStyles({
     button: {
       color: "#212529",
-    // boxShadow: "3px 3px 6px #212529, -3px -3px 6px #212529"
-    // boxShadow:  "2px 2px 10px #212529, -2px -2px 10px #212529"
     },
     root: {
         height: 190,
@@ -50,36 +48,6 @@ const CustomTooltip = withStyles((theme) => ({
         fontSize: 13,
     },
 }))(Tooltip);
-
-const PrettoSlider = withStyles({
-    root: {
-      color: '#52af77',
-      height: 8,
-    },
-    thumb: {
-      height: 24,
-      width: 24,
-      backgroundColor: '#fff',
-      border: '2px solid currentColor',
-      marginTop: -8,
-      marginLeft: -12,
-      '&:focus, &:hover, &$active': {
-        boxShadow: 'inherit',
-      },
-    },
-    active: {},
-    valueLabel: {
-      left: 'calc(-50% + 4px)',
-    },
-    track: {
-      height: 8,
-      borderRadius: 4,
-    },
-    rail: {
-      height: 8,
-      borderRadius: 4,
-    },
-  })(Slider);
 
 
 export default function Player({ 
@@ -281,12 +249,7 @@ export default function Player({
                 </div>
                 <div className="time-control">
                     <p>{getTime(songInfo.currentTime)}</p>
-                    <div 
-                        style={{
-                        background: `#212529`
-                        }} 
-                        className="track"
-                    >
+                    <div className="track">
                         <input 
                             type="range"
                             min={0}
@@ -294,15 +257,6 @@ export default function Player({
                             value={songInfo.currentTime}
                             onChange={dragHandler} 
                         />
-                        {/* <PrettoSlider 
-                            valueLabelDisplay="auto" 
-                            aria-label="pretto slider" 
-                            defaultValue={0} 
-                            min={0}
-                            max={songInfo.duration || 0}
-                            value={songInfo.currentTime}
-                            onChange={dragHandler} 
-                        /> */}
                         <div style={trackAnimation} className="animate-track"></div>
                     </div>    
                     <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
