@@ -43,7 +43,7 @@ $OleoScript: 'Oleo Script', cursive;
     h1 {
         padding-bottom: 10px;
         color: $PlayerColor;
-        width: 80%;
+        width: 100%;
         font-size: 2.1rem;
         font-family: $LexenDeca;
         margin: 0;
@@ -229,4 +229,14 @@ $OleoScript: 'Oleo Script', cursive;
     .play-control {
         width: 100%;
     }
+    .player {
+       
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .player-song-name {
+        h1 {
+            width: 100%;
+        }
+    } 
 }
