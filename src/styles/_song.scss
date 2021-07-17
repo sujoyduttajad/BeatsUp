@@ -84,14 +84,8 @@ $ShadowColor: #404340;
     }
 }
 
-
-
-
-
-
-// img {
-//     width: 89%;
-//     border-radius: 50%;
-//     border: 0.1px solid #fff;
-//     box-shadow: 0px 2px 10px #ffffff;
-// }
+@media (min-width: 1366px) {
+    .song__area {
+        margin-left: 42px;
+    }
+}

@@ -287,14 +287,14 @@ export default function Player({
                         }} 
                         className="track"
                     >
-                        <input 
+                        {/* <input 
                             type="range"
                             min={0}
                             max={songInfo.duration || 0}
                             value={songInfo.currentTime}
                             onChange={dragHandler} 
-                        />
-                        {/* <PrettoSlider 
+                        /> */}
+                        <PrettoSlider 
                             valueLabelDisplay="auto" 
                             aria-label="pretto slider" 
                             defaultValue={0} 
@@ -302,7 +302,7 @@ export default function Player({
                             max={songInfo.duration || 0}
                             value={songInfo.currentTime}
                             onChange={dragHandler} 
-                        /> */}
+                        />
                         <div style={trackAnimation} className="animate-track"></div>
                     </div>    
                     <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
