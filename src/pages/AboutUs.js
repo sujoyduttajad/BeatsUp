@@ -94,7 +94,7 @@ const AboutUs = () => {
                             SASS, JavaScript, HTML5, CSS3, Bootstrap</p>
                         <p className="content">I am still learning UX design but much inclined towards visual UI design.
                             This app is all designed by me(super proud).</p>
-                        <p className="content">I am a photographer and enjoy playing guitar in my free time, Spoiler huge Marvel fan.</p>    
+                        <p className="content">I am a photographer also enjoy playing guitar in my free time.</p>    
 
                         <p>Skills</p>    
                         <div className="skills-container">
