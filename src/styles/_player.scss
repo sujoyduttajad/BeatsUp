@@ -80,7 +80,7 @@ $OleoScript: 'Oleo Script', cursive;
     margin-right: 7.3%;
     padding: 21px 2px 15px 2px;
     border-radius: 15px;
-    height: 26vh;
+    height: 32vh;
 }
 
 .track {
@@ -164,8 +164,8 @@ $OleoScript: 'Oleo Script', cursive;
 }
 .MuiSlider-thumb {
     background-color: $PlayerColor !important;
-    width: 15px !important;
-    height: 15px !important;
+    width: 1em !important;
+    height: 1em !important;
     margin-left: 0 !important;
 }
 .MuiSlider-rail, .MuiSlider-track {
@@ -213,6 +213,9 @@ $OleoScript: 'Oleo Script', cursive;
     }
     .play-control {
         width: 40%;
+    }
+    .volume-control {
+        @include flex(column, center, center);
     }
 }
 // Large screen monitor
