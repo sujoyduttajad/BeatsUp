@@ -54,7 +54,7 @@ const Sidebar = () => {
                 <p>Collection</p>
                 
                 <div>
-                    <div><h3>Library</h3></div>
+                    <div className="nav__container"><h3>Library</h3></div>
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
@@ -65,25 +65,25 @@ const Sidebar = () => {
                         }} 
                         className={classes.badge} badgeContent={"Coming Soon"} color="error"
                     >
-                        <div><h3>Favourites</h3></div>
+                        <div className="nav__container"><h3>Favourites</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
                 </div>
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Playlist</h3></div>
+                        <div className="nav__container"><h3>Playlist</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faCompactDisc} /></span>
                 </div>
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Artists</h3></div>
+                        <div className="nav__container"><h3>Artists</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faUser} /></span>
                 </div>
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Albums</h3></div>
+                        <div className="nav__container"><h3>Albums</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faFolder} /></span>
                 </div>
@@ -94,19 +94,19 @@ const Sidebar = () => {
 
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Themes</h3></div>
+                        <div className="nav__container"><h3>Themes</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faPalette} /></span>
                 </div>
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Dark</h3></div>
+                        <div className="nav__container"><h3>Dark</h3></div>
                     </Badge>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faLightbulb} /></span>
                 </div>
                 <div>
                     <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
-                        <div><h3>Karaoke</h3></div>
+                        <div className="nav__container"><h3>Karaoke</h3></div>
                     </Badge>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faMicrophoneAlt} /></span>
                 </div>
@@ -116,11 +116,11 @@ const Sidebar = () => {
                 <p>Apps</p>
 
                 <div>
-                    <div><h3>Radio</h3></div>
+                    <div className="nav__container"><h3>Radio</h3></div>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faBroadcastTower} /></span>
                 </div>
                 <div>
-                    <div><h3>Top-Charts</h3></div>
+                    <div className="nav__container"><h3>Top-Charts</h3></div>
                     <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faHeadphones} /></span>
                 </div>
             </section>
@@ -128,7 +128,7 @@ const Sidebar = () => {
             <section className="section">
                 <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
                 <div>
-                    <div><h3>About Us</h3></div>
+                    <div className="nav__container"><h3>About Us</h3></div>
                     <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faSmile} /></span>
                 </div>
                 </NavLink>

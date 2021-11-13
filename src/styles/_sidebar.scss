@@ -88,6 +88,10 @@ $Orange: #EE6C4D;
     }
 }
 
+.nav__container {
+    width: 11em;
+}
+
 .concentrator, .concentrator-plus, .concentrator-plus-clip {
     display: flex;
     flex-direction: column;
@@ -112,6 +116,11 @@ $Orange: #EE6C4D;
     transform: translateX(-17%);
     opacity: 1;
     transition: all 0.5s ease-in-out;
+}
+
+.MuiBadge-anchorOriginTopRightRectangle {
+    top: 8px !important;
+    right: 29px !important;
 }
 
 // Mobile layout
