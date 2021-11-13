@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
       }
     },
     badge: {
-    //   width: "3em"
+    //   top: "8px",
+    //   right: "0px",
     }
   }));
 
@@ -57,7 +58,13 @@ const Sidebar = () => {
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
-                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                    <Badge 
+                        anchorOrigin={{
+                            vertical: 'top',
+                            horizontal: 'right',
+                        }} 
+                        className={classes.badge} badgeContent={"Coming Soon"} color="error"
+                    >
                         <div><h3>Favourites</h3></div>
                     </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
