@@ -9,17 +9,15 @@ $ShadowColor: #404340;
 
 .song__area {
     @include flex(column, center, center);
-    max-height: 40vh;
+    max-height: 100%;
     height: 100%;
     width: 100%;
-    margin: 3.5em;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 3.5em auto;
 }
 
 .song-container{
     @include flex(column, center, center);
-    max-height: 40vh;
+    max-height: 50vh;
     height: 100%;
     max-width: 40vw;
     width: 100%;
