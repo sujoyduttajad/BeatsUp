@@ -22,8 +22,21 @@ import { NavLink } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Badge from '@material-ui/core/Badge';
 
- const Sidebar = () => {
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      "& > *": {
+        margin: theme.spacing(1)
+      }
+    },
+    badge: {
+    //   width: "3em"
+    }
+  }));
+
+
+const Sidebar = () => {
+    const classes = useStyles();
     const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
 
     return (
@@ -40,7 +53,7 @@ import Badge from '@material-ui/core/Badge';
                 <p>Collection</p>
                 
                 <div>
-                    <Badge badgeContent={"Coming Soon"} color="error"><div><h3>Library</h3></div></Badge>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error"><div><h3>Library</h3></div></Badge>
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
