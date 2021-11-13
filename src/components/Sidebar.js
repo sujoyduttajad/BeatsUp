@@ -19,6 +19,8 @@ import
     } from '@fortawesome/free-solid-svg-icons';
 import { MusicContext } from '../context/musicContext';   
 import { NavLink } from "react-router-dom"; 
+import { makeStyles } from '@material-ui/core/styles';
+import Badge from '@material-ui/core/Badge';
 
  const Sidebar = () => {
 
@@ -38,7 +40,7 @@ import { NavLink } from "react-router-dom";
                 <p>Collection</p>
                 
                 <div>
-                    <div><h3>Library</h3></div>
+                    <Badge badgeContent={"Coming Soon"} color="error"><div><h3>Library</h3></div></Badge>
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
