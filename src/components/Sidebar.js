@@ -53,23 +53,31 @@ const Sidebar = () => {
                 <p>Collection</p>
                 
                 <div>
-                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error"><div><h3>Library</h3></div></Badge>
+                    <div><h3>Library</h3></div>
                     <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
                 </div>
                 <div>
-                    <div><h3>Favourites</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Favourites</h3></div>
+                    </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faHeart} /></span>
                 </div>
                 <div>
-                    <div><h3>Playlist</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Playlist</h3></div>
+                    </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faCompactDisc} /></span>
                 </div>
                 <div>
-                    <div><h3>Artists</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Artists</h3></div>
+                    </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faUser} /></span>
                 </div>
                 <div>
-                    <div><h3>Albums</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Albums</h3></div>
+                    </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faFolder} /></span>
                 </div>
             </section>            
@@ -78,15 +86,21 @@ const Sidebar = () => {
                 <p>Custom</p>
 
                 <div>
-                    <div><h3>Themes</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Themes</h3></div>
+                    </Badge>
                     <span className="concentrator-plus"><FontAwesomeIcon size="2x" icon={faPalette} /></span>
                 </div>
                 <div>
-                    <div><h3>Dark</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Dark</h3></div>
+                    </Badge>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faLightbulb} /></span>
                 </div>
                 <div>
-                    <div><h3>Karaoke</h3></div>
+                    <Badge className={classes.badge} badgeContent={"Coming Soon"} color="error">
+                        <div><h3>Karaoke</h3></div>
+                    </Badge>
                     <span className="concentrator"><FontAwesomeIcon size="2x" icon={faMicrophoneAlt} /></span>
                 </div>
             </section>
