@@ -52,7 +52,7 @@ const Sidebar = () => {
             <div className="sidebar__container">
             <section className="section">
                 <p>Collection</p>
-                <NavLink to="/Library" activeStyle={{ outline: 'none'}} > 
+                <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
                     <div>
                         <div className="nav__container"><h3>Library</h3></div>
                         <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
