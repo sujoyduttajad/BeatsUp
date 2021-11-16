@@ -5,7 +5,6 @@ import Player from '../components/Player';
 import Song from '../components/Song';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
-import data from '../data';
 import Library from '../components/Library';
 import { MusicContext } from '../context/musicContext';
 
