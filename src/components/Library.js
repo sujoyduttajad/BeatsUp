@@ -7,7 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import LibrarySong from './LibrarySong';
-import { MusicContext } from '../context/musicContext';
+// import { MusicContext } from '../context/musicContext';
 
 const useStyles = makeStyles({
     root: {
@@ -23,11 +23,19 @@ const useStyles = makeStyles({
     }
   });
 
- const Library = ({ songs, isPlaying, setIsPlaying, audioRef, currentSong, setSongs, setCurrentSong }) => {
+ const Library = ({ 
+     songs, 
+     isPlaying, 
+     setIsPlaying, 
+     audioRef, 
+     currentSong, 
+     setSongs, 
+     setCurrentSong 
+    }) => {
 
     const classes = useStyles();
     // const [isPlaying, setIsPlaying] = useContext(MusicContext);
-    
+    console.log(songs);
 
     return (
         <div className="library">
