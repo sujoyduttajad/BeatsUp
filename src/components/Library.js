@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useState, useContext} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -8,6 +8,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import LibrarySong from './LibrarySong';
 // import { MusicContext } from '../context/musicContext';
+import data from '../data';
+
 
 const useStyles = makeStyles({
     root: {
@@ -29,13 +31,14 @@ const useStyles = makeStyles({
      setIsPlaying, 
      audioRef, 
      currentSong, 
-     setSongs, 
+    //  setSongs, 
      setCurrentSong 
     }) => {
 
     const classes = useStyles();
     // const [isPlaying, setIsPlaying] = useContext(MusicContext);
     console.log(songs);
+    const [songsLib, setSongsLib] = useState(data());
 
     return (
         <div className="library">
@@ -56,9 +59,9 @@ const useStyles = makeStyles({
                             <LibrarySong 
                                 key={song.id} 
                                 song={song} 
-                                songs={songs} 
-                                currentSong={currentSong} 
-                                setSongs={setSongs} 
+                                songsLib={songsLib} 
+                                setSongsLib={setSongsLib}
+                                currentSong={currentSong}                                 
                                 isPlaying={isPlaying}
                                 setIsPlaying={setIsPlaying}
                                 audioRef={audioRef}

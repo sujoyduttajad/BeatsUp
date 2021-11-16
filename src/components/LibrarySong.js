@@ -21,7 +21,16 @@ const useStyles = makeStyles({
     }
   });
 
-export default function LibrarySong({songs, currentSong, setSongs, isPlaying, setIsPlaying, audioRef, song, setCurrentSong}) {
+export default function LibrarySong({
+    songsLib, 
+    currentSong, 
+    setSongsLib, 
+    isPlaying, 
+    setIsPlaying, 
+    audioRef, 
+    song, 
+    setCurrentSong
+}) {
 
     // const {song} = props;
     const classes = useStyles();
@@ -37,7 +46,7 @@ export default function LibrarySong({songs, currentSong, setSongs, isPlaying, se
         // Add Active Song
         //id -> song that you click on
         //song.id -> represents the song from the state
-        const newSongs = songs.map((song) => {
+        const newSongs = songsLib.map((song) => {
             if(song.id === currentSong.id){
                 return {
                     ...song,
@@ -50,7 +59,7 @@ export default function LibrarySong({songs, currentSong, setSongs, isPlaying, se
                 };
             }
         });
-        setSongs(newSongs);
+        setSongsLib(newSongs);
         /*   ##############            Active SONG HANDLER           ##############      */
 
         /*   ##############            CURRENT SONG PLAYER           ##############      */
