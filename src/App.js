@@ -80,7 +80,18 @@ function App() {
               <Route path='/login' exact component={LogIn} />
               <Route path='/SignUp' exact component={SignUp} />
               <Route path='/AboutUs' exact component={AboutUs} />
-              <Route path='/Library' exact component={LibraryCollection} />
+              <Route path='/Library' exact >
+                <LibraryCollection 
+                  songs={songs}
+                  currentSong={currentSong}
+                  setCurrentSong={setCurrentSong}
+                  audioRef={audioRef} 
+                  isPlaying={isPlaying}
+                  setIsPlaying={setIsPlaying}
+                  setSongs={setSongs}
+                  songInfo={songInfo}
+                />
+              </Route>
             </Switch>
             
       </Router>
