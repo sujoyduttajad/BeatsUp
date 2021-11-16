@@ -219,7 +219,6 @@ $BurnSienna: #EE6C4D;
 }
 
 .skills-container {
-
     img {
         width: 4.5rem;
         height: 4.5rem;
@@ -240,19 +239,16 @@ $BurnSienna: #EE6C4D;
     border: 0;
     
     @include flex(column, space-between, flex-start);
-
     .contact-info-container {
         @include flex(column, center, flex-start);
         
     }
-
     .contact-info {
         @include flex(row, space-evenly, center);
 
         margin-bottom: 20px;
         margin-left: 10px;
     }
-
     p {
         font-size: 0.9rem;
         margin-left: 10px;
@@ -274,11 +270,9 @@ $BurnSienna: #EE6C4D;
         -webkit-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
         -moz-box-shadow: 4px 3px 13px 3px rgba(71,71,71,0.53);
     }
-
     p {
         color: #000;
     }
-
     img {
         width: 2rem;
         height: 2rem;
@@ -288,11 +282,9 @@ $BurnSienna: #EE6C4D;
     }
 }
 .contactus-social-media-git {
-
     p {
         color: $primaryBlack;
     }
-
     img {
         width: 2.5rem;
         height: 2.5rem;
@@ -302,13 +294,11 @@ $BurnSienna: #EE6C4D;
 }
 
 .banner__logo__container {
-    @include flex(row, space-between, center);
-    
+    @include flex(row, space-between, center);    
     img {
         width: 12.5rem;
         height: 5.5rem;
     }
-
 }
 
 .contactus-terms-conditions {
@@ -316,9 +306,23 @@ $BurnSienna: #EE6C4D;
     p {
         color: $BurnSienna;
     }
-
 }
 
 .github-icon, .instagram-icon {
     padding: 0.2em 0.5em;
+}
+
+@media (min-width: 1920px) {
+    .about-container {
+        max-height: 100vh;
+        height: 95vh;
+    }
+    .animation-container {
+        height: 100%;
+    }
+    .about {
+        top: 42px;
+        right: -2%;
+        margin: 8rem 4rem;
+    }
 }
