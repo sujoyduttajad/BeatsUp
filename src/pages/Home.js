@@ -58,7 +58,7 @@ export default function Home() {
         if(isPlaying) audioRef.current.play();
       }
   }
-  console.log(audioRef);
+  // console.log(audioRef);
   return (
 
   <>
@@ -84,11 +84,11 @@ export default function Home() {
                         />
                     </div>
                     <div className="col-lg-4">
-                    <Song currentSong={currentSong} isPlaying={isPlaying} />
+                      <Song currentSong={currentSong} isPlaying={isPlaying} />
                     </div>
                 </div>
                 <div className="row player-container">
-                    <section>
+                    {/* <section> */}
                       <Library 
                           songs={songs}
                           currentSong={currentSong}
@@ -107,7 +107,7 @@ export default function Home() {
                           onEnded={songEndHandler}
                           draggable={true}
                       ></audio>
-                    </section>
+                    {/* </section> */}
                 </div>
           </div>
           <footer className="footer"></footer>
