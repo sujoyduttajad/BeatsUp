@@ -1,5 +1,5 @@
 import React, {useState, useRef, } from 'react';
-import "./styles/app.scss";
+import "./styles/home.scss";
 import Home from './pages/Home';
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LogIn from './pages/LogIn';
