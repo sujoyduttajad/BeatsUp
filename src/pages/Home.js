@@ -89,24 +89,24 @@ export default function Home() {
                 </div>
                 <div className="row player-container">
                     <section>
-                    <Library 
-                        songs={songs}
-                        currentSong={currentSong}
-                        setCurrentSong={setCurrentSong}
-                        audioRef={audioRef} 
-                        isPlaying={isPlaying}
-                        setIsPlaying={setIsPlaying}
-                        setSongs={setSongs}
-                        songInfo={songInfo}
-                    />
-                        <audio 
-                            onTimeUpdate={timeUpdateHandler}
-                            onLoadedMetadata={timeUpdateHandler} 
-                            ref={audioRef} 
-                            src={currentSong.audio}
-                            onEnded={songEndHandler}
-                            draggable={true}
-                        ></audio>
+                      <Library 
+                          songs={songs}
+                          currentSong={currentSong}
+                          setCurrentSong={setCurrentSong}
+                          audioRef={audioRef} 
+                          isPlaying={isPlaying}
+                          setIsPlaying={setIsPlaying}
+                          setSongs={setSongs}
+                          songInfo={songInfo}
+                      />
+                      <audio 
+                          onTimeUpdate={timeUpdateHandler}
+                          onLoadedMetadata={timeUpdateHandler} 
+                          ref={audioRef} 
+                          src={currentSong.audio}
+                          onEnded={songEndHandler}
+                          draggable={true}
+                      ></audio>
                     </section>
                 </div>
           </div>
