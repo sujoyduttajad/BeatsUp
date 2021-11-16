@@ -52,11 +52,12 @@ const Sidebar = () => {
             <div className="sidebar__container">
             <section className="section">
                 <p>Collection</p>
-                
-                <div>
-                    <div className="nav__container"><h3>Library</h3></div>
-                    <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
-                </div>
+                <NavLink to="/Library" activeStyle={{ outline: 'none'}} > 
+                    <div>
+                        <div className="nav__container"><h3>Library</h3></div>
+                        <span className="concentrator-plus-clip"><FontAwesomeIcon size="2x" icon={faClipboardList} /></span>
+                    </div>
+                </NavLink>
                 <div>
                     <Badge 
                         anchorOrigin={{
@@ -127,10 +128,10 @@ const Sidebar = () => {
                    
             <section className="section">
                 <NavLink to="/AboutUs" activeStyle={{ outline: 'none'}} > 
-                <div>
-                    <div className="nav__container"><h3>About Us</h3></div>
-                    <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faSmile} /></span>
-                </div>
+                    <div>
+                        <div className="nav__container"><h3>About Us</h3></div>
+                        <span className="concentrator-plus nero"><FontAwesomeIcon size="2x" icon={faSmile} /></span>
+                    </div>
                 </NavLink>
             </section>
 
