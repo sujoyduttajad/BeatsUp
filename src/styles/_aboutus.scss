@@ -313,8 +313,7 @@ $BurnSienna: #EE6C4D;
 }
 
 @media (min-width: 1920px) {
-    .about-container {
-        max-height: 100vh;
+    .about-container  {
         height: 95vh;
     }
     .animation-container {
@@ -325,4 +324,19 @@ $BurnSienna: #EE6C4D;
         right: -2%;
         margin: 8rem 4rem;
     }
+    .bioData-intro {
+        margin-left: 15em;
+        transition: all 0.3s;
+        max-width: 40vw;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+    .bioData-container {
+        height: 100vh;
+    }
+    .contactus-container {
+        height: 95vh;
+        padding-left: 15em;
+    }
+
 }
