@@ -10,55 +10,26 @@ import Library from '../components/Library';
 import { MusicContext } from '../context/musicContext';
 
 
-export default function Home() {
+export default function Home({
+  audioRef,
+  songs,
+  currentSong,
+  isPlaying,
+  setIsPlaying,
+  songInfo,
+  setSongInfo,
+  setSongs,
+  setCurrentSong,
+  repeat,
+  setRepeat,
+  timeUpdateHandler,
+  songEndHandler
+}) {
 
   // Using the context API to share state globally 
   const [libraryStatus, setLibraryStatus] = useContext(MusicContext);
 
-  //Ref
-  // If you need to select a specific HTML tag in your component you can use a reference
-  // So to use it import useRef from react
-  const audioRef = useRef(null);
-  const [songs, setSongs] = useState(data());
-  const [currentSong, setCurrentSong] = useState(songs[0]);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [songInfo, setSongInfo] = useState({
-    currentTime: 0,
-    duration: 0,
-    animationPercentage: 0,
-  });
-//   const [libraryStatus, setLibraryStatus] = useState(false);
-  const [repeat, setRepeat] = useState(false);
-  
-  // Event handler lifted up
-  // onTimeUpdate basically runs everytime the time changes in the audio
-  const timeUpdateHandler = (e) => {
-    const current = e.target.currentTime;
-    const duration = e.target.duration;
-    // Calculate Percentage
-    // This code gets rid of all the decimals
-    const roundedCurrent = Math.round(current);
-    const roundedDuration = Math.round(duration);
-    const animation = Math.round((roundedCurrent / roundedDuration) * 100);
-    setSongInfo({
-        ...songInfo,
-        currentTime: current,
-        duration: duration,
-        animationPercentage: animation
-    })
-  };
-  
-  const songEndHandler = async () => {
-      let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
-      if(repeat) {
-        await setCurrentSong(songs[(currentIndex)]);     
-        if(isPlaying) audioRef.current.play();
-      }else {
-        await setCurrentSong(songs[(currentIndex + 1) % songs.length]);     
-        if(isPlaying) audioRef.current.play();
-      }
-  }
-  // console.log(audioRef);
+
   return (
 
   <>
@@ -88,7 +59,6 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="row player-container">
-                    {/* <section> */}
                       <Library 
                           songs={songs}
                           currentSong={currentSong}
@@ -107,7 +77,6 @@ export default function Home() {
                           onEnded={songEndHandler}
                           draggable={true}
                       ></audio>
-                    {/* </section> */}
                 </div>
           </div>
           <footer className="footer"></footer>
