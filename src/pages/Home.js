@@ -1,12 +1,12 @@
 import React, {useState, useRef, useContext} from 'react';
 // import styles
 import "../styles/app.scss";
-import Player from './Player';
-import Song from './Song';
-import Sidebar from './Sidebar';
-import Header from './Header';
+import Player from '../components/Player';
+import Song from '../components/Song';
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
 import data from '../data';
-import Library from './Library';
+import Library from '../components/Library';
 import { MusicContext } from '../context/musicContext';
 
 
