@@ -175,8 +175,7 @@ const useStyles = makeStyles((theme) => ({
                     </div>
 
                     <div className={classes.avatar}>
-                        <Avatar className={classes.orange}>SD</Avatar>
-                        {/* <div className={classes.dropdown}></div> */}    
+                        <Avatar className={classes.orange}>SD</Avatar>    
                     </div>   
                     <div>                 
                         <Fab className={classes.dropdown} variant="extended" onClick={handleClick}>
